@@ -28,6 +28,7 @@
     _coverLabel.backgroundColor = UIColorFromRGB(0xf7c3c2);
     _coverLabel.hidden = YES;
     _coverLabel.font = [UIFont systemFontOfSize:18];
+    _coverLabel.textColor = [UIColor whiteColor];
     _coverLabel.textAlignment = NSTextAlignmentCenter;
     _coverLabel.numberOfLines = 0;
     _coverLabel.layer.cornerRadius = kWidthScale(15);
@@ -91,14 +92,14 @@
             _dayLabel.font = [UIFont systemFontOfSize:12];
             _dayLabel.text = [NSString stringWithFormat:@"%ld月\n%ld",(long)showMonth,(long)showDay];
             _dayLabel.textAlignment = NSTextAlignmentCenter;
-            [_dayLabel sizeToFit];
+//            [_dayLabel sizeToFit];
         }
         
         if(showYear != nowYear){
             _dayLabel.font = [UIFont systemFontOfSize:12];
             _dayLabel.text = [NSString stringWithFormat:@"%ld月\n%ld\n%ld",(long)showMonth,(long)showDay,(long)showYear];
             _dayLabel.textAlignment = NSTextAlignmentCenter;
-            [_dayLabel sizeToFit];
+//            [_dayLabel sizeToFit];
         }
     }
     

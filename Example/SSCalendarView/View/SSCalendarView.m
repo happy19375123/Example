@@ -8,6 +8,8 @@
 
 #import "SSCalendarView.h"
 
+#define CalendarViewCellHeight 45
+
 @interface SSCalendarView()<UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) NSCalendar *calendar;
 @property (nonatomic, copy) NSDate *nowDate;
@@ -16,9 +18,7 @@
 
 @property (nonatomic) UICollectionView *collectionView;
 @property (nonatomic) UITableView *monthCoverTableView;
-
-@property (weak, nonatomic) UIView *magnifierContainer;
-@property (weak, nonatomic) UIImageView *maginifierContentView;
+@property (nonatomic) UIView *weekDayView;
 
 @property (nonatomic,strong) NSIndexPath *selectIndexPath;
 @property (nonatomic,assign) NSInteger dayCount;
@@ -43,10 +43,30 @@
     return self;
 }
 
+- (void)layoutSubviews{
+    [super layoutSubviews];
+}
+
 -(void)makeView{
+    self.clipsToBounds = YES;
+    
+    NSArray *weekDayArray = @[@"日",@"一",@"二",@"三",@"四",@"五",@"六"];
+    _weekDayView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, kWidthScale(20))];
+    [self addSubview:_weekDayView];
+    for(int i =0; i < weekDayArray.count ; i++){
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake([self cellWidth]*i, 0, [self cellWidth], kWidthScale(20))];
+        label.backgroundColor = UIColorFromRGB(0xeff0f1);
+        label.textColor = UIColorFromRGB(0x323232);
+        label.font = [UIFont systemFontOfSize:11];
+        label.text = [weekDayArray objectAtIndex:i];
+        label.textAlignment = NSTextAlignmentCenter;
+        [_weekDayView addSubview:label];
+    }
+    
+    
     SSCalendarCollectionViewFlowLayout *flowLayout = [[SSCalendarCollectionViewFlowLayout alloc] init];
     
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0,self.frame.size.width,self.frame.size.height) collectionViewLayout:flowLayout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,kWidthScale(20),self.frame.size.width,self.frame.size.height) collectionViewLayout:flowLayout];
     _collectionView.backgroundColor = [UIColor whiteColor];
     
     _collectionView.decelerationRate = UIScrollViewDecelerationRateNormal;
@@ -55,19 +75,18 @@
     [_collectionView registerClass:[SSCalendarDayCollectionViewCell class] forCellWithReuseIdentifier:@"SSCalendarDayCollectionViewCell"];
     [self addSubview:_collectionView];
     
-    _monthCoverTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) style:UITableViewStylePlain];
+    _monthCoverTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kWidthScale(20), self.frame.size.width, self.frame.size.height) style:UITableViewStylePlain];
     _monthCoverTableView.dataSource = self;
     _monthCoverTableView.delegate = self;
-    _monthCoverTableView.hidden = NO;
-//    _monthCoverTableView.separatorColor = [UIColor clearColor];
-    _monthCoverTableView.alpha = 0;
+    _monthCoverTableView.hidden = YES;
+    _monthCoverTableView.separatorColor = [UIColor clearColor];
+    _monthCoverTableView.userInteractionEnabled = NO;
+    _monthCoverTableView.backgroundColor = UIColorFromRGBWithAlpha(0xffffff, 0.6);
     [self addSubview:_monthCoverTableView];
     
     NSLog(@"%@",[SSCalendarTool dateByAddingDays:13 toDate:self.startDate]);
 //    NSIndexPath *nowIndexPath = [self indexPathForDate:[SSCalendarTool dateByAddingDays:130 toDate:self.startDate]];
 //    [_collectionView scrollToItemAtIndexPath:nowIndexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
-    
-    
 }
 
 -(NSMutableArray *)getAllDayIsEqualToFifteen{
@@ -94,19 +113,6 @@
     self.fifteenDateArray = [self getAllDayIsEqualToFifteen];
     self.fifteenRowNumberArray = [self getAllRowNumberDayIsEqualToFifteen];
 }
-
-#pragma mark - public
--(void)scrollToToday{
-    [self scrollToDate:_nowDate];
-}
-
--(void)scrollToDate:(NSDate *)date{
-    NSIndexPath *indexPath = [self indexPathForDate:date];
-    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
-//    [_collectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionTop];
-    [self collectionView:_collectionView didSelectItemAtIndexPath:indexPath];
-}
-
 
 # pragma mark - UICollectionView data source
 
@@ -142,6 +148,7 @@
 //    NSDate *date = [self dateForCellAtIndexPath:indexPath];
     self.selectIndexPath = indexPath;
     [collectionView reloadData];
+    [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
 }
 
 # pragma mark - UICollectionView layout
@@ -163,7 +170,7 @@
 }
 
 - (CGFloat)cellWidth{
-    return self.frame.size.width/ 7.0;
+    return self.frame.size.width/ 7;
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
@@ -189,10 +196,18 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.textAlignment = NSTextAlignmentCenter;
+        cell.textLabel.font = [UIFont boldSystemFontOfSize:19];
     }
     if([self.fifteenRowNumberArray containsObject:[NSNumber numberWithInteger:indexPath.row]]){
         NSDateComponents *showComponents = [[SSCalendarTool calendar] components:CALENDAR_COMPONENTS fromDate:[self.fifteenDateArray objectAtIndex:[self.fifteenRowNumberArray indexOfObject:[NSNumber numberWithInteger:indexPath.row]]]];
-        cell.textLabel.text = [NSString stringWithFormat:@"%ld月 %ld",(long)showComponents.month,(long)showComponents.year];
+        NSDateComponents *nowComponents = [[SSCalendarTool calendar] components:CALENDAR_COMPONENTS fromDate:self.nowDate];
+        NSString *month = [NSString translation:[NSString stringWithFormat:@"%ld",(long)showComponents.month]];
+        if(showComponents.year == nowComponents.year){
+            cell.textLabel.text = [NSString stringWithFormat:@"%@月",month];
+        }else{
+            cell.textLabel.text = [NSString stringWithFormat:@"%@月 %ld",month,(long)showComponents.year];
+        }
     }else{
         cell.textLabel.text = @"";
     }
@@ -201,7 +216,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 45;
+    return kWidthScale(45);
 }
 
 
@@ -211,29 +226,59 @@
     self.monthCoverTableView.hidden = NO;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         self.monthCoverTableView.alpha = 1;
-        self.collectionView.alpha = 0.3;
+//        self.collectionView.alpha = 0.3;
     } completion:^(BOOL finished) {
         
     }];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    // update month cover
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if(_monthCoverTableView.alpha > 0){
+        static float newy = 0;
+        static float oldy = 0;
+        newy = _monthCoverTableView.contentOffset.y ;
+        if (newy != oldy ) {
+            if (newy > oldy){
+                
+            }else if(newy < oldy){
+                [self showLineCount:5];
+            }
+            oldy = newy;
+        }
+    }
+    
+    
     self.monthCoverTableView.contentOffset = self.collectionView.contentOffset;
 }
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView
-                     withVelocity:(CGPoint)velocity
-              targetContentOffset:(inout CGPoint *)targetContentOffset{
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        self.monthCoverTableView.alpha = 0;
-        self.collectionView.alpha = 1;
-    } completion:^(BOOL finished) {
-        self.monthCoverTableView.hidden = YES;
-    }];
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+            self.monthCoverTableView.alpha = 0;
+    //        self.collectionView.alpha = 1;
+        } completion:^(BOOL finished) {
+            self.monthCoverTableView.hidden = YES;
+        }];
+    
 }
 
+
+#pragma mark - public
+-(void)scrollToToday{
+    [self scrollToDate:_nowDate];
+}
+
+-(void)scrollToDate:(NSDate *)date{
+    NSIndexPath *indexPath = [self indexPathForDate:date];
+    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+    [self collectionView:_collectionView didSelectItemAtIndexPath:indexPath];
+}
+
+-(void)showLineCount:(NSInteger )count{
+    _collectionView.height = kWidthScale(45*count);
+    _monthCoverTableView.height = kWidthScale(45*count);
+
+}
 
 @end
 

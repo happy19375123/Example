@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		11B5B0890F7C3BC039908E1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5672BC9139B2436F2383A85D /* libPods.a */; };
 		4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0E8DA11BD8F811008CAAB4 /* FunctionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4DAA68F81BF5B3580026F7DA /* SSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA68F71BF5B3580026F7DA /* SSTool.m */; settings = {ASSET_TAGS = (); }; };
+		4DAA68FE1BF5B4EB0026F7DA /* NSString+SSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA68FD1BF5B4EB0026F7DA /* NSString+SSExtension.m */; settings = {ASSET_TAGS = (); }; };
+		4DAA69011BF5BB680026F7DA /* UIView+LayoutFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA69001BF5BB680026F7DA /* UIView+LayoutFrame.m */; settings = {ASSET_TAGS = (); }; };
 		4DAFAAC91BEA21B1009D522B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAC81BEA21B1009D522B /* Note.m */; settings = {ASSET_TAGS = (); }; };
 		4DAFAAD31BF1CFAB009D522B /* SSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAD21BF1CFAB009D522B /* SSCalendarViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4DAFAAD71BF1D063009D522B /* SSCalendarDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAD61BF1D063009D522B /* SSCalendarDayCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -45,6 +48,12 @@
 /* Begin PBXFileReference section */
 		4D0E8DA01BD8F811008CAAB4 /* FunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionViewController.h; path = Function/FunctionViewController.h; sourceTree = "<group>"; };
 		4D0E8DA11BD8F811008CAAB4 /* FunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionViewController.m; path = Function/FunctionViewController.m; sourceTree = "<group>"; };
+		4DAA68F61BF5B3580026F7DA /* SSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSTool.h; path = Tool/SSTool.h; sourceTree = "<group>"; };
+		4DAA68F71BF5B3580026F7DA /* SSTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSTool.m; path = Tool/SSTool.m; sourceTree = "<group>"; };
+		4DAA68FC1BF5B4EB0026F7DA /* NSString+SSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SSExtension.h"; path = "Tool/NSString+SSExtension.h"; sourceTree = "<group>"; };
+		4DAA68FD1BF5B4EB0026F7DA /* NSString+SSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SSExtension.m"; path = "Tool/NSString+SSExtension.m"; sourceTree = "<group>"; };
+		4DAA68FF1BF5BB680026F7DA /* UIView+LayoutFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+LayoutFrame.h"; path = "Tool/UIView+LayoutFrame.h"; sourceTree = "<group>"; };
+		4DAA69001BF5BB680026F7DA /* UIView+LayoutFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+LayoutFrame.m"; path = "Tool/UIView+LayoutFrame.m"; sourceTree = "<group>"; };
 		4DAFAAC71BEA21B1009D522B /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		4DAFAAC81BEA21B1009D522B /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		4DAFAAD11BF1CFAB009D522B /* SSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCalendarViewController.h; path = SSCalendarView/SSCalendarViewController.h; sourceTree = "<group>"; };
@@ -105,6 +114,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DAA68F51BF5B3440026F7DA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA68F61BF5B3580026F7DA /* SSTool.h */,
+				4DAA68F71BF5B3580026F7DA /* SSTool.m */,
+				4DAA68FC1BF5B4EB0026F7DA /* NSString+SSExtension.h */,
+				4DAA68FD1BF5B4EB0026F7DA /* NSString+SSExtension.m */,
+				4DAA68FF1BF5BB680026F7DA /* UIView+LayoutFrame.h */,
+				4DAA69001BF5BB680026F7DA /* UIView+LayoutFrame.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		4DAFAACE1BF1CEF0009D522B /* Function */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +186,7 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4DAA68F51BF5B3440026F7DA /* Tool */,
 				4DAFAAC71BEA21B1009D522B /* Note.h */,
 				4DAFAAC81BEA21B1009D522B /* Note.m */,
 				4DEDD8881BD8778C008BAF8B /* AppDelegate.h */,
@@ -412,7 +435,10 @@
 				4DAFAAC91BEA21B1009D522B /* Note.m in Sources */,
 				4DEE7C701BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m in Sources */,
 				4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */,
+				4DAA68F81BF5B3580026F7DA /* SSTool.m in Sources */,
+				4DAA68FE1BF5B4EB0026F7DA /* NSString+SSExtension.m in Sources */,
 				4DEDD88D1BD8778C008BAF8B /* ViewController.m in Sources */,
+				4DAA69011BF5BB680026F7DA /* UIView+LayoutFrame.m in Sources */,
 				4DEDD88A1BD8778C008BAF8B /* AppDelegate.m in Sources */,
 				4DEDD8871BD8778C008BAF8B /* main.m in Sources */,
 				4DAFAAD71BF1D063009D522B /* SSCalendarDayCollectionViewCell.m in Sources */,

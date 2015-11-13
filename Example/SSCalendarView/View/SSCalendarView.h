@@ -17,5 +17,6 @@
 
 -(void)scrollToToday;
 -(void)scrollToDate:(NSDate *)date;
+-(void)showLineCount:(NSInteger )count;
 
 @end

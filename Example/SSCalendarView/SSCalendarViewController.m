@@ -11,6 +11,7 @@
 @interface SSCalendarViewController ()
 {
     SSCalendarView *_calendarView;
+    UITableView *_infoTableView;
 }
 
 @property(nonatomic,strong) NSDate *nowDate;
@@ -25,7 +26,7 @@
     self.nowDate = [NSDate date];
     [self initViews];
     
-//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(scrollToToday) userInfo:nil repeats:YES];
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollToToday) userInfo:nil repeats:YES];
 }
 
 -(void)initViews{
@@ -41,8 +42,10 @@
 }
 
 -(void)scrollToToday{
-    [_calendarView scrollToToday];
-//    [_calendarView scrollToDate:[SSCalendarTool dateByAddingDays:arc4random()%100 toDate:_nowDate]];
+    [_calendarView scrollToDate:[SSCalendarTool dateByAddingDays:arc4random()%100 toDate:_nowDate]];
+    [_calendarView showLineCount:2];
+    
+//    [_calendarView scrollToToday];
 }
 
 - (void)didReceiveMemoryWarning {
