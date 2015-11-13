@@ -1,0 +1,24 @@
+//
+//  Example-Prefix.pch
+//  Example
+//
+//  Created by 张鹏 on 15/11/10.
+//  Copyright © 2015年 张鹏. All rights reserved.
+//
+
+#ifndef Example_Prefix_h
+#define Example_Prefix_h
+
+
+#endif /* Example_Prefix_h */
+
+
+#import "Masonry.h"
+
+    #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+    #define UIColorFromRGBWithAlpha(rgbValue,a) [UIColor \
+            colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+            green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+            blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+
+    #define kWidthScale(w)    (([UIScreen mainScreen].bounds.size.width/320)*(w))

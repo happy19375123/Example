@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B5B0890F7C3BC039908E1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5672BC9139B2436F2383A85D /* libPods.a */; };
+		4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0E8DA11BD8F811008CAAB4 /* FunctionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4DAFAAC91BEA21B1009D522B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAC81BEA21B1009D522B /* Note.m */; settings = {ASSET_TAGS = (); }; };
+		4DAFAAD31BF1CFAB009D522B /* SSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAD21BF1CFAB009D522B /* SSCalendarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4DAFAAD71BF1D063009D522B /* SSCalendarDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAD61BF1D063009D522B /* SSCalendarDayCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		4DAFAADA1BF1DA96009D522B /* SSCalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAAD91BF1DA96009D522B /* SSCalendarTool.m */; settings = {ASSET_TAGS = (); }; };
+		4DAFAADE1BF319CD009D522B /* SSCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAADD1BF319CD009D522B /* SSCalendarView.m */; settings = {ASSET_TAGS = (); }; };
 		4DEDD8871BD8778C008BAF8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDD8861BD8778C008BAF8B /* main.m */; };
 		4DEDD88A1BD8778C008BAF8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDD8891BD8778C008BAF8B /* AppDelegate.m */; };
 		4DEDD88D1BD8778C008BAF8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDD88C1BD8778C008BAF8B /* ViewController.m */; };
@@ -15,6 +22,7 @@
 		4DEDD8951BD8778C008BAF8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEDD8931BD8778C008BAF8B /* LaunchScreen.storyboard */; };
 		4DEDD8A01BD8778D008BAF8B /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDD89F1BD8778D008BAF8B /* ExampleTests.m */; };
 		4DEDD8AB1BD8778D008BAF8B /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDD8AA1BD8778D008BAF8B /* ExampleUITests.m */; };
+		4DEE7C701BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE7C6F1BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0E8DA01BD8F811008CAAB4 /* FunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionViewController.h; path = Function/FunctionViewController.h; sourceTree = "<group>"; };
+		4D0E8DA11BD8F811008CAAB4 /* FunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionViewController.m; path = Function/FunctionViewController.m; sourceTree = "<group>"; };
+		4DAFAAC71BEA21B1009D522B /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		4DAFAAC81BEA21B1009D522B /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		4DAFAAD11BF1CFAB009D522B /* SSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCalendarViewController.h; path = SSCalendarView/SSCalendarViewController.h; sourceTree = "<group>"; };
+		4DAFAAD21BF1CFAB009D522B /* SSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCalendarViewController.m; path = SSCalendarView/SSCalendarViewController.m; sourceTree = "<group>"; };
+		4DAFAAD51BF1D063009D522B /* SSCalendarDayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCalendarDayCollectionViewCell.h; path = SSCalendarView/View/SSCalendarDayCollectionViewCell.h; sourceTree = "<group>"; };
+		4DAFAAD61BF1D063009D522B /* SSCalendarDayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCalendarDayCollectionViewCell.m; path = SSCalendarView/View/SSCalendarDayCollectionViewCell.m; sourceTree = "<group>"; };
+		4DAFAAD81BF1DA96009D522B /* SSCalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCalendarTool.h; path = SSCalendarView/SSCalendarTool.h; sourceTree = "<group>"; };
+		4DAFAAD91BF1DA96009D522B /* SSCalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCalendarTool.m; path = SSCalendarView/SSCalendarTool.m; sourceTree = "<group>"; };
+		4DAFAADB1BF1E723009D522B /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
+		4DAFAADC1BF319CD009D522B /* SSCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCalendarView.h; path = SSCalendarView/View/SSCalendarView.h; sourceTree = "<group>"; };
+		4DAFAADD1BF319CD009D522B /* SSCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCalendarView.m; path = SSCalendarView/View/SSCalendarView.m; sourceTree = "<group>"; };
 		4DEDD8821BD8778C008BAF8B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEDD8861BD8778C008BAF8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DEDD8881BD8778C008BAF8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +72,11 @@
 		4DEDD8A61BD8778D008BAF8B /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEDD8AA1BD8778D008BAF8B /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		4DEDD8AC1BD8778D008BAF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DEE7C6E1BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCalendarCollectionViewFlowLayout.h; path = SSCalendarView/View/SSCalendarCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		4DEE7C6F1BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCalendarCollectionViewFlowLayout.m; path = SSCalendarView/View/SSCalendarCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		5672BC9139B2436F2383A85D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		764E2181B638E9E928811D27 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B93A70E93CD2DA4989554FB0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B5B0890F7C3BC039908E1C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +105,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DAFAACE1BF1CEF0009D522B /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				4D0E8DA01BD8F811008CAAB4 /* FunctionViewController.h */,
+				4D0E8DA11BD8F811008CAAB4 /* FunctionViewController.m */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		4DAFAAD01BF1CF77009D522B /* SSCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				4DAFAAD41BF1CFCF009D522B /* View */,
+				4DAFAAD11BF1CFAB009D522B /* SSCalendarViewController.h */,
+				4DAFAAD21BF1CFAB009D522B /* SSCalendarViewController.m */,
+				4DAFAAD81BF1DA96009D522B /* SSCalendarTool.h */,
+				4DAFAAD91BF1DA96009D522B /* SSCalendarTool.m */,
+			);
+			name = SSCalendarView;
+			sourceTree = "<group>";
+		};
+		4DAFAAD41BF1CFCF009D522B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DAFAAD51BF1D063009D522B /* SSCalendarDayCollectionViewCell.h */,
+				4DAFAAD61BF1D063009D522B /* SSCalendarDayCollectionViewCell.m */,
+				4DAFAADC1BF319CD009D522B /* SSCalendarView.h */,
+				4DAFAADD1BF319CD009D522B /* SSCalendarView.m */,
+				4DEE7C6E1BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.h */,
+				4DEE7C6F1BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		4DEDD8791BD8778C008BAF8B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +146,8 @@
 				4DEDD89E1BD8778D008BAF8B /* ExampleTests */,
 				4DEDD8A91BD8778D008BAF8B /* ExampleUITests */,
 				4DEDD8831BD8778C008BAF8B /* Products */,
+				6E3656721DB0D37988535D4B /* Pods */,
+				9126B7DFBC553135CBA1C94E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +164,14 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4DAFAAC71BEA21B1009D522B /* Note.h */,
+				4DAFAAC81BEA21B1009D522B /* Note.m */,
 				4DEDD8881BD8778C008BAF8B /* AppDelegate.h */,
 				4DEDD8891BD8778C008BAF8B /* AppDelegate.m */,
 				4DEDD88B1BD8778C008BAF8B /* ViewController.h */,
 				4DEDD88C1BD8778C008BAF8B /* ViewController.m */,
-				4DEDD88E1BD8778C008BAF8B /* Main.storyboard */,
-				4DEDD8911BD8778C008BAF8B /* Assets.xcassets */,
-				4DEDD8931BD8778C008BAF8B /* LaunchScreen.storyboard */,
-				4DEDD8961BD8778C008BAF8B /* Info.plist */,
+				4DAFAACE1BF1CEF0009D522B /* Function */,
+				4DAFAAD01BF1CF77009D522B /* SSCalendarView */,
 				4DEDD8851BD8778C008BAF8B /* Supporting Files */,
 			);
 			path = Example;
@@ -117,6 +180,11 @@
 		4DEDD8851BD8778C008BAF8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DAFAADB1BF1E723009D522B /* Example-Prefix.pch */,
+				4DEDD88E1BD8778C008BAF8B /* Main.storyboard */,
+				4DEDD8911BD8778C008BAF8B /* Assets.xcassets */,
+				4DEDD8931BD8778C008BAF8B /* LaunchScreen.storyboard */,
+				4DEDD8961BD8778C008BAF8B /* Info.plist */,
 				4DEDD8861BD8778C008BAF8B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +208,23 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
+		6E3656721DB0D37988535D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				764E2181B638E9E928811D27 /* Pods.debug.xcconfig */,
+				B93A70E93CD2DA4989554FB0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9126B7DFBC553135CBA1C94E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5672BC9139B2436F2383A85D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DEDD8AF1BD8778D008BAF8B /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				A7CD629DF8C02EBE32DE77A1 /* Check Pods Manifest.lock */,
 				4DEDD87E1BD8778C008BAF8B /* Sources */,
 				4DEDD87F1BD8778C008BAF8B /* Frameworks */,
 				4DEDD8801BD8778C008BAF8B /* Resources */,
+				7B07A053A0BDE0F3A50D7417 /* Embed Pods Frameworks */,
+				24897943E671AF70F27BA390 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +353,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24897943E671AF70F27BA390 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B07A053A0BDE0F3A50D7417 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CD629DF8C02EBE32DE77A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DEDD87E1BD8778C008BAF8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAFAADE1BF319CD009D522B /* SSCalendarView.m in Sources */,
+				4DAFAAD31BF1CFAB009D522B /* SSCalendarViewController.m in Sources */,
+				4DAFAADA1BF1DA96009D522B /* SSCalendarTool.m in Sources */,
+				4DAFAAC91BEA21B1009D522B /* Note.m in Sources */,
+				4DEE7C701BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m in Sources */,
+				4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */,
 				4DEDD88D1BD8778C008BAF8B /* ViewController.m in Sources */,
 				4DEDD88A1BD8778C008BAF8B /* AppDelegate.m in Sources */,
 				4DEDD8871BD8778C008BAF8B /* main.m in Sources */,
+				4DAFAAD71BF1D063009D522B /* SSCalendarDayCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +554,34 @@
 		};
 		4DEDD8B01BD8778D008BAF8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 764E2181B638E9E928811D27 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yongtao Wang (QUJT8Q7PUL)";
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = con.ht.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b38b2a2-0822-43a1-ae7b-71c138856e48";
 			};
 			name = Debug;
 		};
 		4DEDD8B11BD8778D008BAF8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B93A70E93CD2DA4989554FB0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yongtao Wang (QUJT8Q7PUL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yongtao Wang (QUJT8Q7PUL)";
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = con.ht.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b38b2a2-0822-43a1-ae7b-71c138856e48";
 			};
 			name = Release;
 		};
@@ -498,6 +652,7 @@
 				4DEDD8B11BD8778D008BAF8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DEDD8B21BD8778D008BAF8B /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +661,7 @@
 				4DEDD8B41BD8778D008BAF8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DEDD8B51BD8778D008BAF8B /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +670,7 @@
 				4DEDD8B71BD8778D008BAF8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
