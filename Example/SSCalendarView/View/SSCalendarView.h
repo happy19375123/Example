@@ -10,8 +10,17 @@
 #import "SSCalendarTool.h"
 #import "SSCalendarDayCollectionViewCell.h"
 #import "SSCalendarCollectionViewFlowLayout.h"
+#import "SSCalendarViewController.h"
+
+@protocol SSCalendarViewDelegate <NSObject>
+
+-(void)clickIndexPath:(NSIndexPath *)indexPath;
+
+@end
 
 @interface SSCalendarView : UIView
+
+@property(nonatomic,assign) id<SSCalendarViewDelegate> delegate;
 
 - (id)initWithFrame:(CGRect)frame startDate:(NSDate *)startDate endDate:(NSDate *)endDate;
 

@@ -25,7 +25,7 @@
 
 -(void)makeView{
     _coverLabel = [[UILabel alloc]init];
-    _coverLabel.backgroundColor = UIColorFromRGB(0xf7c3c2);
+    _coverLabel.backgroundColor = UIColorFromRGB(0xf29b9a);
     _coverLabel.hidden = YES;
     _coverLabel.font = [UIFont systemFontOfSize:18];
     _coverLabel.textColor = [UIColor whiteColor];
@@ -77,10 +77,10 @@
     
     if([SSCalendarTool daysBetween:nowDate and:_showDate] <= -1){
         self.backgroundColor = UIColorFromRGB(0xeff0f1);
-        _dayLabel.textColor = UIColorFromRGB(0x787878);
+        _dayLabel.textColor = UIColorFromRGB(0x505050);
     }else{
         self.backgroundColor = [UIColor whiteColor];
-        _dayLabel.textColor = UIColorFromRGB(0xdcdcdc);
+        _dayLabel.textColor = UIColorFromRGB(0x787878);
     }
     
     if(showYear > nowYear){
@@ -92,23 +92,17 @@
             _dayLabel.font = [UIFont systemFontOfSize:12];
             _dayLabel.text = [NSString stringWithFormat:@"%ld月\n%ld",(long)showMonth,(long)showDay];
             _dayLabel.textAlignment = NSTextAlignmentCenter;
-//            [_dayLabel sizeToFit];
         }
         
         if(showYear != nowYear){
             _dayLabel.font = [UIFont systemFontOfSize:12];
             _dayLabel.text = [NSString stringWithFormat:@"%ld月\n%ld\n%ld",(long)showMonth,(long)showDay,(long)showYear];
             _dayLabel.textAlignment = NSTextAlignmentCenter;
-//            [_dayLabel sizeToFit];
         }
     }
-    
-    
-
 }
 
 -(void)isShowSelectView:(BOOL )isShow{
-//    _coverLabel.hidden = !isShow;
     if(isShow){
         _coverLabel.hidden = NO;
         _dayLabel.hidden = YES;
@@ -116,7 +110,6 @@
         _coverLabel.hidden = YES;
         _dayLabel.hidden = NO;
     }
-    
 }
 
 +(CGFloat )heightForCell{

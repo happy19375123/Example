@@ -24,6 +24,7 @@
 @property (nonatomic,assign) NSInteger dayCount;
 @property (nonatomic,strong) NSMutableArray *fifteenDateArray;
 @property (nonatomic,strong) NSMutableArray *fifteenRowNumberArray;
+@property (nonatomic,assign) BOOL canResponse;
 @end
 
 
@@ -87,6 +88,7 @@
     NSLog(@"%@",[SSCalendarTool dateByAddingDays:13 toDate:self.startDate]);
 //    NSIndexPath *nowIndexPath = [self indexPathForDate:[SSCalendarTool dateByAddingDays:130 toDate:self.startDate]];
 //    [_collectionView scrollToItemAtIndexPath:nowIndexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+    CALayer *layer = [[CALayer alloc]init];
 }
 
 -(NSMutableArray *)getAllDayIsEqualToFifteen{
@@ -145,10 +147,21 @@
 # pragma mark - UICollectionView delegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    NSDate *date = [self dateForCellAtIndexPath:indexPath];
-    self.selectIndexPath = indexPath;
-    [collectionView reloadData];
-    [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+    if([self.belongViewController isKindOfClass:[SSCalendarViewController class]]){
+        ((SSCalendarViewController *)self.belongViewController).responderString = kResponderSSCalendarView;
+    }
+
+    [self selectCollectionViewCellWithIndexPath:indexPath];
+    if([self.delegate respondsToSelector:@selector(clickIndexPath:)]){
+        [self.delegate clickIndexPath:indexPath];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    SSCalendarDayCollectionViewCell *deselectedCell = (SSCalendarDayCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [deselectedCell isShowSelectView:NO];
+    deselectedCell.selected = NO;
+//    [collectionView reloadItemsAtIndexPaths:@[indexPath]];
 }
 
 # pragma mark - UICollectionView layout
@@ -222,18 +235,25 @@
 
 # pragma mark - UIScrollView delegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    self.canResponse = NO;
+    if([self.belongViewController isKindOfClass:[SSCalendarViewController class]]){
+        ((SSCalendarViewController *)self.belongViewController).responderString = kResponderSSCalendarView;
+    }
     self.monthCoverTableView.contentSize = self.collectionView.contentSize;
     self.monthCoverTableView.hidden = NO;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         self.monthCoverTableView.alpha = 1;
-//        self.collectionView.alpha = 0.3;
     } completion:^(BOOL finished) {
         
     }];
 }
 
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset NS_AVAILABLE_IOS(5_0){
+    self.canResponse = YES;
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    if(_monthCoverTableView.alpha > 0){
+    if(scrollView == _monthCoverTableView){
         static float newy = 0;
         static float oldy = 0;
         newy = _monthCoverTableView.contentOffset.y ;
@@ -241,27 +261,33 @@
             if (newy > oldy){
                 
             }else if(newy < oldy){
-                [self showLineCount:5];
+                if([self.belongViewController isKindOfClass:[SSCalendarViewController class]] && [((SSCalendarViewController *)self.belongViewController).responderString isEqualToString:kResponderSSCalendarView]){
+                    [self showLineCount:5];
+                }
+
             }
             oldy = newy;
         }
     }
-    
-    
     self.monthCoverTableView.contentOffset = self.collectionView.contentOffset;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
             self.monthCoverTableView.alpha = 0;
-    //        self.collectionView.alpha = 1;
         } completion:^(BOOL finished) {
             self.monthCoverTableView.hidden = YES;
         }];
-    
 }
 
+#pragma mark - select CollectionViewCell
+-(void)selectCollectionViewCellWithIndexPath:(NSIndexPath *)indexPath{
+    self.selectIndexPath = indexPath;
+    SSCalendarDayCollectionViewCell *selectedCell = (SSCalendarDayCollectionViewCell *)[_collectionView cellForItemAtIndexPath:indexPath];
+    [selectedCell isShowSelectView:YES];
+    selectedCell.selected = YES;
+    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+}
 
 #pragma mark - public
 -(void)scrollToToday{
@@ -269,15 +295,24 @@
 }
 
 -(void)scrollToDate:(NSDate *)date{
-    NSIndexPath *indexPath = [self indexPathForDate:date];
-    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
-    [self collectionView:_collectionView didSelectItemAtIndexPath:indexPath];
+    if([self.belongViewController isKindOfClass:[SSCalendarViewController class]] && [((SSCalendarViewController *)self.belongViewController).responderString isEqualToString:kResponderEventTableView]){
+        NSLog(@"response eventtableview");
+        NSArray *array = [self.collectionView indexPathsForSelectedItems];
+        for(NSIndexPath *index in array){
+            [self collectionView:self.collectionView didDeselectItemAtIndexPath:index];
+        }
+
+        NSIndexPath *indexPath = [self indexPathForDate:date];
+        [_collectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionTop];
+        
+        [self selectCollectionViewCellWithIndexPath:indexPath];
+    }
 }
 
 -(void)showLineCount:(NSInteger )count{
     _collectionView.height = kWidthScale(45*count);
     _monthCoverTableView.height = kWidthScale(45*count);
-
+    self.height = kWidthScale(45*count)+kWidthScale(20);
 }
 
 @end

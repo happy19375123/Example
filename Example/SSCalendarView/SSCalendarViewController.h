@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "SSCalendarView.h"
 
+#define kResponderEventTableView @"kResponderEventTableView"
+#define kResponderSSCalendarView @"kResponderSSCalendarView"
+
 @interface SSCalendarViewController : UIViewController
+
+@property(nonatomic,strong) NSString *responderString;
 
 @end

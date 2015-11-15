@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NSString+SSExtension.h"
 #import "UIView+LayoutFrame.h"
+#import "UIView+BelongViewController.h"
 
 @interface SSTool : NSObject
 
