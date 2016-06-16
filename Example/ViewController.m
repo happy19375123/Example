@@ -41,7 +41,8 @@
     {
         self.navigationController.navigationBar.translucent = NO;
     }
-
+    UIButton *bt = [[UIButton alloc]init];
+    [bt setTitle:@"123" forState:UIControlStateNormal];
 }
 
 
