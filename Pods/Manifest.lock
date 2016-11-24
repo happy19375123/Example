@@ -1,0 +1,29 @@
+PODS:
+  - GPUImage (0.1.7)
+  - IQKeyboardManager (3.3.7)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.12)
+  - MJRefresh (3.1.10)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - GPUImage (~> 0.1.7)
+  - IQKeyboardManager (~> 3.3.7)
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - SDWebImage (~> 3.8.1)
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: 61bcf70d30acf0a09dde48e68502da0fde8eeafa
+  MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: f0dbe13a7acef2119e6acbcbb1f5722e41ea82e3
+
+COCOAPODS: 1.0.1
