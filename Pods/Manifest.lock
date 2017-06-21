@@ -7,6 +7,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - ZTKRepoSpec (0.0.1)
 
 DEPENDENCIES:
   - GPUImage (~> 0.1.7)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - SDWebImage (~> 3.8.1)
+  - ZTKRepoSpec
 
 SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
@@ -23,7 +25,8 @@ SPEC CHECKSUMS:
   MJExtension: 61bcf70d30acf0a09dde48e68502da0fde8eeafa
   MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  ZTKRepoSpec: d025a14b36a1b3db498af8f76faa5bf018f9c752
 
-PODFILE CHECKSUM: f0dbe13a7acef2119e6acbcbb1f5722e41ea82e3
+PODFILE CHECKSUM: f786520b3efd9aaadd799230fc9b56d88d09d3ff
 
 COCOAPODS: 1.0.1

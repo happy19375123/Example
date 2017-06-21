@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <CoreMotion/CoreMotion.h>
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UITableView *_tableView;
@@ -55,7 +56,7 @@
     [bt setTitle:@"123" forState:UIControlStateNormal];
     
 //    [[[UIAlertView alloc]initWithTitle:@"测试" message:@"我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才我是天才" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil] show];
-    
+    NSNumber *step = [NSNumber numberWithInteger:123];
 }
 
 

@@ -39,10 +39,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZTKRepoSpec.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>401690255777071233D8627640DED541</key>
+		<key>4250CF15F1AC9B57B277F62CD1F35C47</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,7 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A0AFBEE8B7724F85B3A29E8411AC9EA</key>
+		<key>887DE14460669FC17F5F6CEBE59B10B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D154D7F2C8BE3CBB9F8B78D9F33E414</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -20,6 +20,9 @@
     UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nvc;
 //    [[[UIApplication sharedApplication] keyWindow] rootViewController] = nvc;
+    /*
+    [[[UIAlertView alloc]initWithTitle:nil message:@"我是天才" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil] show];
+     */
     return YES;
 }
 

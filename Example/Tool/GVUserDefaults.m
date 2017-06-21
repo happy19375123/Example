@@ -8,6 +8,7 @@
 
 #import "GVUserDefaults.h"
 #import <objc/runtime.h>
+#import "BaseViewController.h"
 
 @interface GVUserDefaults ()
 @property (strong, nonatomic) NSMutableDictionary *mapping;

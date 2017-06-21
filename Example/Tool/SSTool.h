@@ -25,4 +25,9 @@
  */
 +(NSString *)translation:(NSString *)arebic;
 
+//测试 AFBase64EncodedStringFromString 
++(NSString *)AFBase64EncodedStringFromString:(NSString *)string;
+
+//测试 AES加密
++(NSString *)AESEncryptWith256Key:(NSString *)string encryptKey:(NSString *)key iv:(NSString *)iv;
 @end

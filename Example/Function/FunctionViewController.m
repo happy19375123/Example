@@ -19,6 +19,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
 //    [self run];
     [self testRegular];
+    [self clearUselessLabel:@""];
+    [self testAFBASE64];
 }
 
 -(void)run{
@@ -79,6 +81,32 @@
     NSString *regexString = @"p/v1/practices/+[0-9]+$";
     NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexString];
     return [test evaluateWithObject:url];
+}
+
+//清楚题目中无用的标签
+-(NSString *)clearUselessLabel:(NSString *)string{
+    //    string = [string stringByReplacingOccurrencesOfString:@"<p style=\"display:inline\">" withString:@""];
+    //    string = [string stringByReplacingOccurrencesOfString:@"<p class=\"item-p\">" withString:@""];
+    string = @"<p style=\"display:inline\";>123123123";
+    string = @"<pclass=\"item-p\">税率，是对征税对象的征收比例或征收额度。税率过高，会提高交易成本，从而抑制消费，所以C选项错误。如果目前税率处在拉弗曲线的40%以下的某处，则提高税率，可增加税收；相反，如果目前税率处在拉弗曲线的40%以上的某处，则降低税率，可增加税收。所以A选项和D选项错误。因此，本题选择B选项</p>";
+//    string = [string stringByReplacingOccurrencesOfString:@"^<p.+>$" withString:@""];
+    NSString *result = [string stringByReplacingOccurrencesOfString:@"<p+.+\">+"
+                                             withString:@""
+                                                options:NSRegularExpressionSearch // 注意里要选择这个枚举项,这个是用来匹配正则表达式的
+                                                  range:NSMakeRange (0, string.length)];
+    NSLog(@"%@",result);
+    
+    return result;
+}
+
+-(void)testAFBASE64{
+    NSString *aesString = [SSTool AESEncryptWith256Key:@"{\"newpsw\":\"12345678\",\"username\":\"SHCT-BQ\",\"oldpsw\":\"123456\"}" encryptKey:@"0B762C6DB5FD3B0D31D86F56E0E82312" iv:nil];
+    NSString *afbase64 = [SSTool AFBase64EncodedStringFromString:@"12345678asdfghjklop"];
+    NSData *plainData = [@"12345678asdfghjklop" dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *base64String = [plainData base64EncodedStringWithOptions:0];
+    NSLog(@"aesString = %@",aesString);
+    NSLog(@"afbase64 = %@",afbase64);
+    NSLog(@"base64String = %@",base64String);
 }
 
 - (void)didReceiveMemoryWarning {
