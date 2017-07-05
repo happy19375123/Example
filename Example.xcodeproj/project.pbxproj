@@ -29,6 +29,10 @@
 		4D5C79201EF903E70058B51D /* MSOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C79111EF903E70058B51D /* MSOperator.m */; };
 		4D5C79211EF903E70058B51D /* MSPairOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C79131EF903E70058B51D /* MSPairOperator.m */; };
 		4D5C79221EF903E70058B51D /* MSValueOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C79151EF903E70058B51D /* MSValueOperator.m */; };
+		4D6566211F0CEFD90071A94A /* FenbiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6566201F0CEFD90071A94A /* FenbiViewController.m */; };
+		4D7226BD1F0D10B900B216A5 /* FenbiLectureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7226BC1F0D10B900B216A5 /* FenbiLectureModel.m */; };
+		4D7226C01F0D1D3F00B216A5 /* FenbiDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7226BF1F0D1D3F00B216A5 /* FenbiDataStorage.m */; };
+		4D7226C41F0D1E0600B216A5 /* DataStorageBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7226C31F0D1E0600B216A5 /* DataStorageBase.m */; };
 		4D72F5E81D65AFB100A05392 /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72F5E71D65AFB100A05392 /* AlgorithmViewController.m */; };
 		4D72F5EB1D66D8CC00A05392 /* AlgorithmLeetCode_TwoSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72F5EA1D66D8CC00A05392 /* AlgorithmLeetCode_TwoSum.m */; };
 		4DA49BB01D41526600C8B322 /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA49BAF1D41526600C8B322 /* GVUserDefaults.m */; };
@@ -130,6 +134,14 @@
 		4D5C79131EF903E70058B51D /* MSPairOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPairOperator.m; sourceTree = "<group>"; };
 		4D5C79141EF903E70058B51D /* MSValueOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSValueOperator.h; sourceTree = "<group>"; };
 		4D5C79151EF903E70058B51D /* MSValueOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSValueOperator.m; sourceTree = "<group>"; };
+		4D65661F1F0CEFD90071A94A /* FenbiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenbiViewController.h; sourceTree = "<group>"; };
+		4D6566201F0CEFD90071A94A /* FenbiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenbiViewController.m; sourceTree = "<group>"; };
+		4D7226BB1F0D10B900B216A5 /* FenbiLectureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenbiLectureModel.h; sourceTree = "<group>"; };
+		4D7226BC1F0D10B900B216A5 /* FenbiLectureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenbiLectureModel.m; sourceTree = "<group>"; };
+		4D7226BE1F0D1D3F00B216A5 /* FenbiDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenbiDataStorage.h; sourceTree = "<group>"; };
+		4D7226BF1F0D1D3F00B216A5 /* FenbiDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenbiDataStorage.m; sourceTree = "<group>"; };
+		4D7226C21F0D1E0600B216A5 /* DataStorageBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStorageBase.h; sourceTree = "<group>"; };
+		4D7226C31F0D1E0600B216A5 /* DataStorageBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStorageBase.m; sourceTree = "<group>"; };
 		4D72F5E61D65AFB100A05392 /* AlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmViewController.h; sourceTree = "<group>"; };
 		4D72F5E71D65AFB100A05392 /* AlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmViewController.m; sourceTree = "<group>"; };
 		4D72F5E91D66D8CC00A05392 /* AlgorithmLeetCode_TwoSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmLeetCode_TwoSum.h; sourceTree = "<group>"; };
@@ -323,6 +335,28 @@
 			path = Operator;
 			sourceTree = "<group>";
 		};
+		4D65661E1F0CEFB10071A94A /* Fenbi */ = {
+			isa = PBXGroup;
+			children = (
+				4D65661F1F0CEFD90071A94A /* FenbiViewController.h */,
+				4D6566201F0CEFD90071A94A /* FenbiViewController.m */,
+				4D7226BB1F0D10B900B216A5 /* FenbiLectureModel.h */,
+				4D7226BC1F0D10B900B216A5 /* FenbiLectureModel.m */,
+				4D7226BE1F0D1D3F00B216A5 /* FenbiDataStorage.h */,
+				4D7226BF1F0D1D3F00B216A5 /* FenbiDataStorage.m */,
+			);
+			path = Fenbi;
+			sourceTree = "<group>";
+		};
+		4D7226C11F0D1E0600B216A5 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4D7226C21F0D1E0600B216A5 /* DataStorageBase.h */,
+				4D7226C31F0D1E0600B216A5 /* DataStorageBase.m */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
 		4D72F5E51D65AF9100A05392 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +482,8 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4D7226C11F0D1E0600B216A5 /* DataStorage */,
+				4D65661E1F0CEFB10071A94A /* Fenbi */,
 				4D5C78F31EF8FC8E0058B51D /* Calculator */,
 				4DCD72901EEF9A06005F2E3E /* Scan */,
 				4D165F841D88080A00F85FFB /* GameCenter */,
@@ -676,7 +712,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AE6E892F48B8F66A724780A1 /* [CP] Copy Pods Resources */ = {
@@ -722,6 +758,8 @@
 				4DCD72931EEF9A1E005F2E3E /* ScanViewController.m in Sources */,
 				4DB5E79F1D2605900057A563 /* HPTextViewTapGestureRecognizer.m in Sources */,
 				4D5C79191EF903E70058B51D /* MSStack.m in Sources */,
+				4D7226C41F0D1E0600B216A5 /* DataStorageBase.m in Sources */,
+				4D6566211F0CEFD90071A94A /* FenbiViewController.m in Sources */,
 				4D3B3C9E1D47B5DF0039A2A9 /* UITableViewCell+EdgeInset.m in Sources */,
 				4D72F5EB1D66D8CC00A05392 /* AlgorithmLeetCode_TwoSum.m in Sources */,
 				4DB5E7AC1D260B730057A563 /* SSArcProcessView.m in Sources */,
@@ -752,6 +790,8 @@
 				4DB5E7A31D26090E0057A563 /* CoreAnimationViewController.m in Sources */,
 				4DA49BB01D41526600C8B322 /* GVUserDefaults.m in Sources */,
 				4D21E9561D4A203E00FCD270 /* UIViewController+ESSeparatorInset.m in Sources */,
+				4D7226C01F0D1D3F00B216A5 /* FenbiDataStorage.m in Sources */,
+				4D7226BD1F0D10B900B216A5 /* FenbiLectureModel.m in Sources */,
 				4DB5E7A91D260A5E0057A563 /* SSGradientCircleView.m in Sources */,
 				4D5C79181EF903E70058B51D /* MSScaner.m in Sources */,
 				4D3B3C9B1D47B0B20039A2A9 /* UITableView+EdgeInset.m in Sources */,

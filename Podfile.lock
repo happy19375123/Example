@@ -1,4 +1,22 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - GPUImage (0.1.7)
   - IQKeyboardManager (3.3.7)
   - Masonry (1.0.1)
@@ -10,6 +28,8 @@ PODS:
   - ZTKRepoSpec (0.0.1)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - FMDB (~> 2.6.2)
   - GPUImage (~> 0.1.7)
   - IQKeyboardManager (~> 3.3.7)
   - Masonry
@@ -19,6 +39,8 @@ DEPENDENCIES:
   - ZTKRepoSpec
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
@@ -27,6 +49,6 @@ SPEC CHECKSUMS:
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   ZTKRepoSpec: d025a14b36a1b3db498af8f76faa5bf018f9c752
 
-PODFILE CHECKSUM: f786520b3efd9aaadd799230fc9b56d88d09d3ff
+PODFILE CHECKSUM: d1dce563192c4da62b043e88e9f0bf8a4622f337
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

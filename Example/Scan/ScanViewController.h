@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScanViewController : BaseViewController
+@interface ScanViewController : UIViewController
 
 @end

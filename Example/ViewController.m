@@ -35,6 +35,7 @@
                       @"CoreAnimationViewController",
                       @"AlgorithmViewController",
                       @"GameCenterViewController",
+                      @"FenbiViewController",
                       nil];
     
     _viewControllerArray = [[NSArray alloc]initWithObjects:
@@ -45,6 +46,7 @@
                             @"CoreAnimationViewController",
                             @"AlgorithmViewController",
                             @"GameCenterViewController",
+                            @"FenbiViewController",
                             nil];
 
     //适配ios7
