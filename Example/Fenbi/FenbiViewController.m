@@ -14,14 +14,23 @@
 #import "FenbiDataStorage.h"
 
 @interface FenbiViewController ()
+{
+    NSTimer *_timer;
+}
 
 @end
 
 @implementation FenbiViewController
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [_timer invalidate];
+    _timer = nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self requestFenbiLiveList];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:600 target:self selector:@selector(requestFenbiLiveList) userInfo:nil repeats:YES];
 }
 
 -(void)requestFenbiLiveList{
@@ -59,6 +68,5 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm"];
     return [dateFormatter stringFromDate:[NSDate date]];
 }
-
 
 @end
