@@ -632,7 +632,7 @@
 				TargetAttributes = {
 					4DEDD8811BD8778C008BAF8B = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = PBT4V99GTH;
+						DevelopmentTeam = L53E46QXHS;
 						ProvisioningStyle = Automatic;
 					};
 					4DEDD89A1BD8778D008BAF8B = {
@@ -944,12 +944,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yongtao Wang (6BZ6M4S674)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PBT4V99GTH;
+				DEVELOPMENT_TEAM = L53E46QXHS;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iRare-Media.GameCenterManager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -964,12 +964,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yongtao Wang (6BZ6M4S674)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PBT4V99GTH;
+				DEVELOPMENT_TEAM = L53E46QXHS;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iRare-Media.GameCenterManager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
