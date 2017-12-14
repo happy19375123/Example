@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _timer = [NSTimer scheduledTimerWithTimeInterval:600 target:self selector:@selector(requestFenbiLiveList) userInfo:nil repeats:YES];
+    [self requestFenbiLiveListtest];
 }
 
 -(void)requestFenbiLiveList{
@@ -68,5 +69,44 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm"];
     return [dateFormatter stringFromDate:[NSDate date]];
 }
+
+-(void)requestFenbiLiveListtest{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain",nil];
+    manager.requestSerializer.timeoutInterval = 0.20f;
+    //manager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    //[manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSDictionary *dic = @{@"receive_name":@"我是天才",
+                          @"receive_mobile":@"123",
+                          @"area":@"北京 海淀",
+                          @"detail_address":@"北京",
+                          @"is_default":@"1"
+                          };
+    [manager.requestSerializer setValue:@"application/vnd.edusoho.v2+json" forHTTPHeaderField:@"Accept"];
+    [manager.requestSerializer setValue:@"15f67jxons74skk4s4gwck0o4gsko80" forHTTPHeaderField:@"token"];
+    [manager POST:@"http://120.92.93.120/mapi_v2/User/addAddress" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"success");
+        NSString *date = [self dateByNow];
+        NSMutableArray *mArray = [[NSMutableArray alloc]init];
+        NSArray *dataArray = [responseObject objectForKey:@"datas"];
+        for(NSDictionary *obj in dataArray){
+            NSDictionary *dic = obj[@"lectureSummary"];
+            if([dic isKindOfClass:[NSNull class]]){
+                dic = obj[@"lectureSetSummary"];
+            }
+            FenbiLectureModel *model = [[FenbiLectureModel alloc]initWithDic:dic];
+            model.date = date;
+            [mArray addObject:model];
+        }
+        for(FenbiLectureModel *model in mArray){
+            [[FenbiDataStorage instance] insert_schoolinfo:model];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"faulure");
+    }];
+}
+
 
 @end

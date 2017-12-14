@@ -51,6 +51,14 @@
 		4DB5E7A91D260A5E0057A563 /* SSGradientCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5E7A71D260A5E0057A563 /* SSGradientCircleView.m */; };
 		4DB5E7AC1D260B730057A563 /* SSArcProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5E7AB1D260B730057A563 /* SSArcProcessView.m */; };
 		4DB5E7AF1D2614C50057A563 /* SSRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5E7AE1D2614C50057A563 /* SSRadarView.m */; };
+		4DB85E8C1F739C9F0015F1C5 /* UIButton+EdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB85E8B1F739C9F0015F1C5 /* UIButton+EdgeInsets.m */; };
+		4DC3D3A91FE0F20200D08758 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3A81FE0F20200D08758 /* NullSafe.m */; };
+		4DC3D3AE1FE0F67300D08758 /* NSObject+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3AC1FE0F67300D08758 /* NSObject+swizzle.m */; };
+		4DC3D3D91FE0F6ED00D08758 /* NilSafetyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3D21FE0F6ED00D08758 /* NilSafetyManager.m */; };
+		4DC3D3DA1FE0F6ED00D08758 /* NSArray+NilSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3D41FE0F6ED00D08758 /* NSArray+NilSafety.m */; };
+		4DC3D3DB1FE0F6ED00D08758 /* NSDictionary+NilSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3D61FE0F6ED00D08758 /* NSDictionary+NilSafety.m */; };
+		4DC3D3DC1FE0F6ED00D08758 /* NSNull+NilSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3D81FE0F6ED00D08758 /* NSNull+NilSafety.m */; };
+		4DC3D3DF1FE0F70B00D08758 /* NilSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D3DE1FE0F70B00D08758 /* NilSafeViewController.m */; };
 		4DCD72931EEF9A1E005F2E3E /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD72921EEF9A1E005F2E3E /* ScanViewController.m */; };
 		4DEA47441D2123E90033FE22 /* IMG_0359.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA47421D2123E90033FE22 /* IMG_0359.JPG */; };
 		4DEA47451D2123E90033FE22 /* IMG_0425.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA47431D2123E90033FE22 /* IMG_0425.JPG */; };
@@ -178,6 +186,24 @@
 		4DB5E7AB1D260B730057A563 /* SSArcProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSArcProcessView.m; sourceTree = "<group>"; };
 		4DB5E7AD1D2614C50057A563 /* SSRadarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRadarView.h; sourceTree = "<group>"; };
 		4DB5E7AE1D2614C50057A563 /* SSRadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRadarView.m; sourceTree = "<group>"; };
+		4DB85E8A1F739C9F0015F1C5 /* UIButton+EdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EdgeInsets.h"; sourceTree = "<group>"; };
+		4DB85E8B1F739C9F0015F1C5 /* UIButton+EdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EdgeInsets.m"; sourceTree = "<group>"; };
+		4DC3D3A81FE0F20200D08758 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		4DC3D3AB1FE0F67300D08758 /* NSObject+swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizzle.h"; sourceTree = "<group>"; };
+		4DC3D3AC1FE0F67300D08758 /* NSObject+swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizzle.m"; sourceTree = "<group>"; };
+		4DC3D3AD1FE0F67300D08758 /* swizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swizzleMethod.h; sourceTree = "<group>"; };
+		4DC3D3D01FE0F6ED00D08758 /* NilSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NilSafety.h; sourceTree = "<group>"; };
+		4DC3D3D11FE0F6ED00D08758 /* NilSafetyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NilSafetyManager.h; sourceTree = "<group>"; };
+		4DC3D3D21FE0F6ED00D08758 /* NilSafetyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NilSafetyManager.m; sourceTree = "<group>"; };
+		4DC3D3D31FE0F6ED00D08758 /* NSArray+NilSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NilSafety.h"; sourceTree = "<group>"; };
+		4DC3D3D41FE0F6ED00D08758 /* NSArray+NilSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NilSafety.m"; sourceTree = "<group>"; };
+		4DC3D3D51FE0F6ED00D08758 /* NSDictionary+NilSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSafety.h"; sourceTree = "<group>"; };
+		4DC3D3D61FE0F6ED00D08758 /* NSDictionary+NilSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSafety.m"; sourceTree = "<group>"; };
+		4DC3D3D71FE0F6ED00D08758 /* NSNull+NilSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+NilSafety.h"; sourceTree = "<group>"; };
+		4DC3D3D81FE0F6ED00D08758 /* NSNull+NilSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NilSafety.m"; sourceTree = "<group>"; };
+		4DC3D3DD1FE0F70B00D08758 /* NilSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NilSafeViewController.h; sourceTree = "<group>"; };
+		4DC3D3DE1FE0F70B00D08758 /* NilSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NilSafeViewController.m; sourceTree = "<group>"; };
+		4DC3D3E01FE1079200D08758 /* NilSafety+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NilSafety+Private.h"; sourceTree = "<group>"; };
 		4DCD72911EEF9A1E005F2E3E /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		4DCD72921EEF9A1E005F2E3E /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		4DEA47421D2123E90033FE22 /* IMG_0359.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0359.JPG; sourceTree = "<group>"; };
@@ -371,6 +397,7 @@
 		4DAA68F51BF5B3440026F7DA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4DC3D3AA1FE0F67300D08758 /* swizzleMethod */,
 				4D21E9541D4A203E00FCD270 /* UIViewController+ESSeparatorInset.h */,
 				4D21E9551D4A203E00FCD270 /* UIViewController+ESSeparatorInset.m */,
 				4DA49BAE1D41526600C8B322 /* GVUserDefaults.h */,
@@ -442,6 +469,62 @@
 			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
+		4DB85E891F739C9F0015F1C5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4DB85E8A1F739C9F0015F1C5 /* UIButton+EdgeInsets.h */,
+				4DB85E8B1F739C9F0015F1C5 /* UIButton+EdgeInsets.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4DC3D3A61FE0F13500D08758 /* NilSafe */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3D3CF1FE0F6ED00D08758 /* NilSafe */,
+				4DC3D3A71FE0F20200D08758 /* NullSafe */,
+				4DC3D3DD1FE0F70B00D08758 /* NilSafeViewController.h */,
+				4DC3D3DE1FE0F70B00D08758 /* NilSafeViewController.m */,
+			);
+			path = NilSafe;
+			sourceTree = "<group>";
+		};
+		4DC3D3A71FE0F20200D08758 /* NullSafe */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3D3A81FE0F20200D08758 /* NullSafe.m */,
+			);
+			path = NullSafe;
+			sourceTree = "<group>";
+		};
+		4DC3D3AA1FE0F67300D08758 /* swizzleMethod */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3D3AB1FE0F67300D08758 /* NSObject+swizzle.h */,
+				4DC3D3AC1FE0F67300D08758 /* NSObject+swizzle.m */,
+				4DC3D3AD1FE0F67300D08758 /* swizzleMethod.h */,
+			);
+			name = swizzleMethod;
+			path = Tool/swizzleMethod;
+			sourceTree = "<group>";
+		};
+		4DC3D3CF1FE0F6ED00D08758 /* NilSafe */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3D3E01FE1079200D08758 /* NilSafety+Private.h */,
+				4DC3D3D01FE0F6ED00D08758 /* NilSafety.h */,
+				4DC3D3D11FE0F6ED00D08758 /* NilSafetyManager.h */,
+				4DC3D3D21FE0F6ED00D08758 /* NilSafetyManager.m */,
+				4DC3D3D31FE0F6ED00D08758 /* NSArray+NilSafety.h */,
+				4DC3D3D41FE0F6ED00D08758 /* NSArray+NilSafety.m */,
+				4DC3D3D51FE0F6ED00D08758 /* NSDictionary+NilSafety.h */,
+				4DC3D3D61FE0F6ED00D08758 /* NSDictionary+NilSafety.m */,
+				4DC3D3D71FE0F6ED00D08758 /* NSNull+NilSafety.h */,
+				4DC3D3D81FE0F6ED00D08758 /* NSNull+NilSafety.m */,
+			);
+			path = NilSafe;
+			sourceTree = "<group>";
+		};
 		4DCD72901EEF9A06005F2E3E /* Scan */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +565,8 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4DC3D3A61FE0F13500D08758 /* NilSafe */,
+				4DB85E891F739C9F0015F1C5 /* Category */,
 				4D7226C11F0D1E0600B216A5 /* DataStorage */,
 				4D65661E1F0CEFB10071A94A /* Fenbi */,
 				4D5C78F31EF8FC8E0058B51D /* Calculator */,
@@ -756,23 +841,30 @@
 				4D5C791E1EF903E70058B51D /* MSFunctionOperator.m in Sources */,
 				4D5C791C1EF903E70058B51D /* MSConstant.m in Sources */,
 				4DCD72931EEF9A1E005F2E3E /* ScanViewController.m in Sources */,
+				4DB85E8C1F739C9F0015F1C5 /* UIButton+EdgeInsets.m in Sources */,
 				4DB5E79F1D2605900057A563 /* HPTextViewTapGestureRecognizer.m in Sources */,
 				4D5C79191EF903E70058B51D /* MSStack.m in Sources */,
 				4D7226C41F0D1E0600B216A5 /* DataStorageBase.m in Sources */,
+				4DC3D3DA1FE0F6ED00D08758 /* NSArray+NilSafety.m in Sources */,
 				4D6566211F0CEFD90071A94A /* FenbiViewController.m in Sources */,
 				4D3B3C9E1D47B5DF0039A2A9 /* UITableViewCell+EdgeInset.m in Sources */,
 				4D72F5EB1D66D8CC00A05392 /* AlgorithmLeetCode_TwoSum.m in Sources */,
 				4DB5E7AC1D260B730057A563 /* SSArcProcessView.m in Sources */,
 				4D72F5E81D65AFB100A05392 /* AlgorithmViewController.m in Sources */,
+				4DC3D3DB1FE0F6ED00D08758 /* NSDictionary+NilSafety.m in Sources */,
 				4DFA40AE1D20FD2C00987D10 /* GpuImageFirstViewController.m in Sources */,
 				4DAFAAD31BF1CFAB009D522B /* SSCalendarViewController.m in Sources */,
 				4D165F871D88082000F85FFB /* GameCenterViewController.m in Sources */,
 				4D5C79201EF903E70058B51D /* MSOperator.m in Sources */,
+				4DC3D3A91FE0F20200D08758 /* NullSafe.m in Sources */,
 				4DB5E7A81D260A5E0057A563 /* SSBrokenLineView.m in Sources */,
+				4DC3D3D91FE0F6ED00D08758 /* NilSafetyManager.m in Sources */,
 				4DAFAADA1BF1DA96009D522B /* SSCalendarTool.m in Sources */,
 				4DAFAAC91BEA21B1009D522B /* Note.m in Sources */,
 				4D5C79221EF903E70058B51D /* MSValueOperator.m in Sources */,
+				4DC3D3DC1FE0F6ED00D08758 /* NSNull+NilSafety.m in Sources */,
 				4D5C791D1EF903E70058B51D /* MSElement.m in Sources */,
+				4DC3D3DF1FE0F70B00D08758 /* NilSafeViewController.m in Sources */,
 				4DEE7C701BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m in Sources */,
 				4DB5E7AF1D2614C50057A563 /* SSRadarView.m in Sources */,
 				4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */,
@@ -791,6 +883,7 @@
 				4DA49BB01D41526600C8B322 /* GVUserDefaults.m in Sources */,
 				4D21E9561D4A203E00FCD270 /* UIViewController+ESSeparatorInset.m in Sources */,
 				4D7226C01F0D1D3F00B216A5 /* FenbiDataStorage.m in Sources */,
+				4DC3D3AE1FE0F67300D08758 /* NSObject+swizzle.m in Sources */,
 				4D7226BD1F0D10B900B216A5 /* FenbiLectureModel.m in Sources */,
 				4DB5E7A91D260A5E0057A563 /* SSGradientCircleView.m in Sources */,
 				4D5C79181EF903E70058B51D /* MSScaner.m in Sources */,
