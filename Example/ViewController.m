@@ -38,6 +38,9 @@
                       @"AlgorithmViewController",
                       @"GameCenterViewController",
                       @"FenbiViewController",
+                      @"TestRequestViewController",
+                      @"PlistToJsonViewController",
+                      @"DownloadViewController",
                       nil];
     
     _viewControllerArray = [[NSArray alloc]initWithObjects:
@@ -49,6 +52,9 @@
                             @"AlgorithmViewController",
                             @"GameCenterViewController",
                             @"FenbiViewController",
+                            @"TestRequestViewController",
+                            @"PlistToJsonViewController",
+                            @"DownloadViewController",
                             nil];
 
     //适配ios7
