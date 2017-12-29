@@ -21,6 +21,7 @@
     [self testRegular];
     [self clearUselessLabel:@""];
     [self testAFBASE64];
+    [self testFileSize];
 }
 
 -(void)run{
@@ -109,9 +110,33 @@
     NSLog(@"base64String = %@",base64String);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
+#pragma mark - 获取目录大小
+-(void)testFileSize{
+    NSString *stringPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    CGFloat size = [FunctionViewController folderSizeAtPath2:stringPath];
+    NSLog(@"filesize = %f",size);
+}
+
+//循环调用fileSizeAtPath来获取一个目录所占空间大小
++ (long long) folderSizeAtPath2:(NSString*) folderPath{
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if (![manager fileExistsAtPath:folderPath]) return 0;
+    NSEnumerator *childFilesEnumerator = [[manager subpathsAtPath:folderPath] objectEnumerator];
+    NSString* fileName;
+    long long folderSize = 0;
+    while ((fileName = [childFilesEnumerator nextObject]) != nil){
+        NSString* fileAbsolutePath = [folderPath stringByAppendingPathComponent:fileName];
+        folderSize += [self fileSizeAtPath:fileAbsolutePath];
+    }
+    return folderSize;
+}
+
++ (long long) fileSizeAtPath:(NSString*) filePath{
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:filePath]){
+        return [[manager attributesOfItemAtPath:filePath error:nil] fileSize];
+    }
+    return 0;
 }
 
 @end
