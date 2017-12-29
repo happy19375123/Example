@@ -8,71 +8,57 @@
 
 #import "DataStorageBase.h"
 
-
 @implementation DataStorageBase
 
-
--(FMDatabase *) fmdb_instance
-{
-    static FMDatabase *obj=nil;
+-(FMDatabase *) fmdb_instance{
+    static FMDatabase *obj = nil;
     static dispatch_once_t onceToken;
     NSString *stringPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *path = [stringPath stringByAppendingPathComponent:ht_db];
     dispatch_once(&onceToken,^{
-        obj=[FMDatabase databaseWithPath:path];
+        obj = [FMDatabase databaseWithPath:path];
     });
-    
     return obj;
 }
 
-
--(BOOL) open
-{
+-(BOOL) open{
     return [[self fmdb_instance] open];
 }
 
--(BOOL) close
-{
+-(BOOL) close{
     return [[self fmdb_instance] close];
 }
 
-
-
--(BOOL)beginTransaction
-{
+-(BOOL)beginTransaction{
     return  [[self fmdb_instance] beginTransaction];
 }
--(BOOL)commit
-{
+
+-(BOOL)commit{
     return [[self fmdb_instance] commit];
 }
--(BOOL)rollback
-{
+
+-(BOOL)rollback{
     return [[self fmdb_instance] rollback];
 }
--(BOOL)inTransaction
-{
+
+-(BOOL)inTransaction{
     return [[self fmdb_instance] inTransaction];
 }
--(BOOL)beginDeferredTransaction
-{
+
+-(BOOL)beginDeferredTransaction{
     return [[self fmdb_instance] beginDeferredTransaction];
 }
 
-
 #pragma mark - 配置数据库单聊
--(FMDatabaseQueue *)getSharedDatabaseQueue
-{
-    static FMDatabaseQueue *obj=nil;
+-(FMDatabaseQueue *)getSharedDatabaseQueue{
+    static FMDatabaseQueue *obj = nil;
     static dispatch_once_t onceToken;
     NSString *stringPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *path = [stringPath stringByAppendingPathComponent:ht_db];
     dispatch_once(&onceToken,^{
         obj=[FMDatabaseQueue databaseQueueWithPath:path];
     });
-    
     return obj;
-
 }
 
 @end

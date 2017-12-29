@@ -38,6 +38,9 @@
                       @"AlgorithmViewController",
                       @"GameCenterViewController",
                       @"FenbiViewController",
+                      @"TestRequestViewController",
+                      @"PlistToJsonViewController",
+                      @"DownloadViewController",
                       @"NilSafeViewController",
                       nil];
     
@@ -50,6 +53,9 @@
                             @"AlgorithmViewController",
                             @"GameCenterViewController",
                             @"FenbiViewController",
+                            @"TestRequestViewController",
+                            @"PlistToJsonViewController",
+                            @"DownloadViewController",
                             @"NilSafeViewController",
                             nil];
 

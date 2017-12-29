@@ -78,6 +78,11 @@
 		4DFA40B51D210F7000987D10 /* minecenter_login_area_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DFA40B21D210F7000987D10 /* minecenter_login_area_bg@2x.png */; };
 		4DFC8C401BF887C100069EE8 /* UIView+BelongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC8C3F1BF887C100069EE8 /* UIView+BelongViewController.m */; };
 		B3761D46C1EA844E49001956 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F30B5B6A382CB57C666C98 /* libPods-Example.a */; };
+		FF0370CF1FD3F45300C272D0 /* knowledgeTree_htfi.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0370CE1FD3F45300C272D0 /* knowledgeTree_htfi.plist */; };
+		FF439FC21FB981410068A431 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF439FC11FB981410068A431 /* DownloadViewController.m */; };
+		FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */; };
+		FF5BC6671FCFE9BD009E5D35 /* tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC6661FCFE9BD009E5D35 /* tree.plist */; };
+		FF6A26761FB59F9300D5868C /* TestRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6A26751FB59F9300D5868C /* TestRequestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +242,14 @@
 		4DFC8C3E1BF887C100069EE8 /* UIView+BelongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BelongViewController.h"; path = "Tool/UIView+BelongViewController.h"; sourceTree = "<group>"; };
 		4DFC8C3F1BF887C100069EE8 /* UIView+BelongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BelongViewController.m"; path = "Tool/UIView+BelongViewController.m"; sourceTree = "<group>"; };
 		A0F30B5B6A382CB57C666C98 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0370CE1FD3F45300C272D0 /* knowledgeTree_htfi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = knowledgeTree_htfi.plist; sourceTree = "<group>"; };
+		FF439FC01FB981410068A431 /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		FF439FC11FB981410068A431 /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		FF5BC65F1FCFE8C8009E5D35 /* PlistToJsonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistToJsonViewController.h; sourceTree = "<group>"; };
+		FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistToJsonViewController.m; sourceTree = "<group>"; };
+		FF5BC6661FCFE9BD009E5D35 /* tree.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tree.plist; sourceTree = "<group>"; };
+		FF6A26741FB59F9300D5868C /* TestRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRequestViewController.h; sourceTree = "<group>"; };
+		FF6A26751FB59F9300D5868C /* TestRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRequestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -578,6 +591,9 @@
 			isa = PBXGroup;
 			children = (
 				4DCEA6E61FE8A21700B58EC5 /* TreeView */,
+				FF5BC65E1FCFE8B0009E5D35 /* PlistToJson */,
+				FF439FBF1FB981330068A431 /* Download */,
+				FF6A26731FB59F8000D5868C /* TestRequest */,
 				4DC3D3A61FE0F13500D08758 /* NilSafe */,
 				4DB85E891F739C9F0015F1C5 /* Category */,
 				4D7226C11F0D1E0600B216A5 /* DataStorage */,
@@ -658,6 +674,35 @@
 				A0F30B5B6A382CB57C666C98 /* libPods-Example.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF439FBF1FB981330068A431 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				FF439FC01FB981410068A431 /* DownloadViewController.h */,
+				FF439FC11FB981410068A431 /* DownloadViewController.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		FF5BC65E1FCFE8B0009E5D35 /* PlistToJson */ = {
+			isa = PBXGroup;
+			children = (
+				FF0370CE1FD3F45300C272D0 /* knowledgeTree_htfi.plist */,
+				FF5BC65F1FCFE8C8009E5D35 /* PlistToJsonViewController.h */,
+				FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */,
+				FF5BC6661FCFE9BD009E5D35 /* tree.plist */,
+			);
+			path = PlistToJson;
+			sourceTree = "<group>";
+		};
+		FF6A26731FB59F8000D5868C /* TestRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FF6A26741FB59F9300D5868C /* TestRequestViewController.h */,
+				FF6A26751FB59F9300D5868C /* TestRequestViewController.m */,
+			);
+			path = TestRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -772,11 +817,13 @@
 				4DEDD8951BD8778C008BAF8B /* LaunchScreen.storyboard in Resources */,
 				4DEA47451D2123E90033FE22 /* IMG_0425.JPG in Resources */,
 				4DEA47441D2123E90033FE22 /* IMG_0359.JPG in Resources */,
+				FF0370CF1FD3F45300C272D0 /* knowledgeTree_htfi.plist in Resources */,
 				4DFA40B41D210F7000987D10 /* Icon.png in Resources */,
 				4DEDD8921BD8778C008BAF8B /* Assets.xcassets in Resources */,
 				4DB2DB6D1EA4BE860069CA64 /* category.plist in Resources */,
 				4DFA40B51D210F7000987D10 /* minecenter_login_area_bg@2x.png in Resources */,
 				4DEDD8901BD8778C008BAF8B /* Main.storyboard in Resources */,
+				FF5BC6671FCFE9BD009E5D35 /* tree.plist in Resources */,
 				4D0BEBBA1D757A740086EEB0 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,6 +914,7 @@
 				4DC3D3DB1FE0F6ED00D08758 /* NSDictionary+NilSafety.m in Sources */,
 				4DFA40AE1D20FD2C00987D10 /* GpuImageFirstViewController.m in Sources */,
 				4DAFAAD31BF1CFAB009D522B /* SSCalendarViewController.m in Sources */,
+				FF439FC21FB981410068A431 /* DownloadViewController.m in Sources */,
 				4D165F871D88082000F85FFB /* GameCenterViewController.m in Sources */,
 				4D5C79201EF903E70058B51D /* MSOperator.m in Sources */,
 				4DC3D3A91FE0F20200D08758 /* NullSafe.m in Sources */,
@@ -883,6 +931,7 @@
 				4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */,
 				4DAA68F81BF5B3580026F7DA /* SSTool.m in Sources */,
 				4DAA68FE1BF5B4EB0026F7DA /* NSString+SSExtension.m in Sources */,
+				FF6A26761FB59F9300D5868C /* TestRequestViewController.m in Sources */,
 				4D5C791B1EF903E70058B51D /* MSExpressionHelper.m in Sources */,
 				4DCEA6E91FE8A24800B58EC5 /* TreeViewController.m in Sources */,
 				4DFC8C401BF887C100069EE8 /* UIView+BelongViewController.m in Sources */,
@@ -906,6 +955,7 @@
 				4D5C791F1EF903E70058B51D /* MSNumber.m in Sources */,
 				4DAFAAD71BF1D063009D522B /* SSCalendarDayCollectionViewCell.m in Sources */,
 				4D5C78F61EF8FCA60058B51D /* CalculatorViewController.m in Sources */,
+				FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */,
 				4D5C791A1EF903E70058B51D /* NSError+MSExpression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
