@@ -14,41 +14,155 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - BJLiveBase (1.3.0):
+    - BJLiveBase/Base (= 1.3.0)
+  - BJLiveBase/Auth (1.3.0)
+  - BJLiveBase/Base (1.3.0)
+  - BJLiveBase/Ext (1.3.0)
+  - BJLiveBase/HUD (1.3.0):
+    - MBProgressHUD (~> 1.0)
+  - BJLiveBase/Masonry (1.3.0):
+    - Masonry (~> 1.1)
+  - BJLiveBase/Networking (1.3.0)
+  - BJLiveBase/PocketSocket/Client (1.3.0):
+    - BJLiveBase/PocketSocket/Core
+  - BJLiveBase/PocketSocket/Core (1.3.0)
+  - BJLiveBase/WebImage/AFNetworking (1.3.0):
+    - BJLiveBase/Networking
+    - BJLiveBase/WebImage/BJLWebImage
+  - BJLiveBase/WebImage/BJLWebImage (1.3.0)
+  - BJLiveBase/YYModel (1.3.0)
+  - BJLiveCore (1.3.0):
+    - BJLiveBase (~> 1.3.0)
+    - BJLiveBase/Base
+    - BJLiveBase/Ext
+    - BJLiveBase/Networking
+    - BJLiveBase/PocketSocket/Client
+    - BJLiveBase/WebImage/AFNetworking
+    - BJLiveBase/YYModel
+    - BJLiveCore/static (= 1.3.0)
+  - BJLiveCore/BJHLMediaPlayer (1.3.0):
+    - BJLiveBase (~> 1.3.0)
+    - BJLiveBase/Base
+    - BJLiveBase/Ext
+    - BJLiveBase/Networking
+    - BJLiveBase/PocketSocket/Client
+    - BJLiveBase/WebImage/AFNetworking
+    - BJLiveBase/YYModel
+  - BJLiveCore/static (1.3.0):
+    - BJLiveBase (~> 1.3.0)
+    - BJLiveBase/Base
+    - BJLiveBase/Ext
+    - BJLiveBase/Networking
+    - BJLiveBase/PocketSocket/Client
+    - BJLiveBase/WebImage/AFNetworking
+    - BJLiveBase/YYModel
+    - BJLiveCore/BJHLMediaPlayer
+    - BJLLogStat (~> 0.9.0)
+  - BJLiveUI (1.3.0):
+    - BJLiveUI/static (= 1.3.0)
+  - BJLiveUI/static (1.3.0):
+    - BJLiveUI/static.dependencies
+  - BJLiveUI/static.dependencies (1.3.0):
+    - BJLiveBase
+    - BJLiveBase/Auth
+    - BJLiveBase/Base
+    - BJLiveBase/Ext
+    - BJLiveBase/HUD
+    - BJLiveBase/Masonry
+    - BJLiveBase/Networking
+    - BJLiveBase/WebImage/AFNetworking
+    - BJLiveCore (= 1.3.0)
+    - Masonry
+    - QBImagePickerController (~> 3.0)
+  - BJLLogStat (0.9.0):
+    - BJLiveBase/Networking (~> 1.3.0)
+  - BJPlaybackCore (1.3.0-alpha04):
+    - BJLiveBase (~> 1.3.0)
+    - BJLiveBase/Base
+    - BJLiveBase/Ext
+    - BJLiveBase/Networking
+    - BJLiveBase/YYModel
+    - BJLiveCore (~> 1.3.0)
+    - BJPlayerManagerCore (~> 1.3.0-alpha)
+  - BJPlaybackUI (1.3.0-alpha02):
+    - BJPlaybackCore (~> 1.3.0-alpha)
+    - Masonry
+    - MBProgressHUD
+  - BJPlayerManagerCore (1.3.0-alpha07):
+    - ASIHTTPRequest
+    - BJLiveBase (~> 1.3.0)
+    - BJLiveBase/Base
+    - BJLiveBase/Networking
+    - BJLiveBase/YYModel
+    - BJLLogStat (~> 0.9.0-alpha)
+    - BJVideoPlayer
+  - BJVideoPlayer (0.0.25)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - GPUImage (0.1.7)
   - IQKeyboardManager (3.3.7)
-  - Masonry (1.0.1)
-  - MJExtension (3.0.12)
-  - MJRefresh (3.1.10)
-  - SDWebImage (3.8.1):
-    - SDWebImage/Core (= 3.8.1)
-  - SDWebImage/Core (3.8.1)
-  - ZTKRepoSpec (0.0.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.1)
+  - QBImagePickerController (3.4.0)
+  - Reachability (3.2)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - ZTKRepoSpec (0.0.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - BJLiveUI (~> 1.3.0)
+  - BJPlaybackUI (~> 1.3.0-alpha02)
   - FMDB (~> 2.6.2)
   - GPUImage (~> 0.1.7)
   - IQKeyboardManager (~> 3.3.7)
-  - Masonry
+  - Masonry (~> 1.1.0)
   - MJExtension
   - MJRefresh
-  - SDWebImage (~> 3.8.1)
+  - SDWebImage (~> 4.2.3)
   - ZTKRepoSpec
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  BJLiveBase: 91a39b8ccef53058e4af7623b3d340ea835f2b78
+  BJLiveCore: a877f4ce316dc50cbc2f2ae5d6ef14d11e374c5d
+  BJLiveUI: 2e7f24a5ad538f1dad77e1df6684255cbee9fd70
+  BJLLogStat: d166f1fe879d7654a22ab99a640a71903189cbda
+  BJPlaybackCore: 218e797eec152b85ca723aa6a2844f42459f3c61
+  BJPlaybackUI: a9996f215fbcfc9c7b5dab1a3d71c23d351ecadd
+  BJPlayerManagerCore: f0622e8f0a4fe889f4e18a3dce688627af78b985
+  BJVideoPlayer: 5ae6786ca8c6bb25aa83df2f08e6a808eb14d6df
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
-  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
-  MJExtension: 61bcf70d30acf0a09dde48e68502da0fde8eeafa
-  MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
-  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
-  ZTKRepoSpec: d025a14b36a1b3db498af8f76faa5bf018f9c752
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  ZTKRepoSpec: f7c1ad81157f8652ca436626a95f6ed04444e907
 
-PODFILE CHECKSUM: d1dce563192c4da62b043e88e9f0bf8a4622f337
+PODFILE CHECKSUM: 61bd3b848ded9707489672eb0cb400b341c7c018
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1

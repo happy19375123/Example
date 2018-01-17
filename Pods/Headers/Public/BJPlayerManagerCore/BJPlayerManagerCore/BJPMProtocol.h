@@ -1,0 +1,1 @@
+../../../../BJPlayerManagerCore/BJPlayerManagerCore/BJPlayerManagerCore.framework/Versions/A/Headers/BJPMProtocol.h

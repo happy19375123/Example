@@ -1,0 +1,6 @@
+framework module BJVideoPlayer {
+  umbrella header "BJVideoPlayer.h"
+
+  export *
+  module * { export * }
+}

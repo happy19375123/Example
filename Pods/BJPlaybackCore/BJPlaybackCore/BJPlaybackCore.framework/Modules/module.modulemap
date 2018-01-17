@@ -1,0 +1,6 @@
+framework module BJPlaybackCore {
+  umbrella header "BJPlaybackCore.h"
+
+  export *
+  module * { export * }
+}

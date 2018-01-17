@@ -1,0 +1,6 @@
+framework module BJPlaybackUI {
+  umbrella header "BJPlaybackUI.h"
+
+  export *
+  module * { export * }
+}

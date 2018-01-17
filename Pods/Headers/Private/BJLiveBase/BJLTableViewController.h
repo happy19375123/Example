@@ -1,0 +1,1 @@
+../../../BJLiveBase/UIKit/viewControllers/BJLTableViewController.h

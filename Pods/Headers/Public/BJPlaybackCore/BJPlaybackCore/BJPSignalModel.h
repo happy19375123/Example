@@ -1,0 +1,1 @@
+../../../../BJPlaybackCore/BJPlaybackCore/BJPlaybackCore.framework/Versions/A/Headers/BJPSignalModel.h

@@ -1,0 +1,6 @@
+framework module BJPlayerManagerCore {
+  umbrella header "BJPlayerManagerCore.h"
+
+  export *
+  module * { export * }
+}
