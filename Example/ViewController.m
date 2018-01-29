@@ -42,6 +42,7 @@
                       @"PlistToJsonViewController",
                       @"DownloadViewController",
                       @"NilSafeViewController",
+                      @"BJDownloadViewController",
                       nil];
     
     _viewControllerArray = [[NSArray alloc]initWithObjects:
@@ -57,6 +58,7 @@
                             @"PlistToJsonViewController",
                             @"DownloadViewController",
                             @"NilSafeViewController",
+                            @"BJDownloadViewController",
                             nil];
 
     //适配ios7

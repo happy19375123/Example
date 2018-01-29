@@ -83,6 +83,7 @@
 		FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */; };
 		FF5BC6671FCFE9BD009E5D35 /* tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC6661FCFE9BD009E5D35 /* tree.plist */; };
 		FF6A26761FB59F9300D5868C /* TestRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6A26751FB59F9300D5868C /* TestRequestViewController.m */; };
+		FF98C235201EAFFB004A0100 /* BJDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +251,8 @@
 		FF5BC6661FCFE9BD009E5D35 /* tree.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tree.plist; sourceTree = "<group>"; };
 		FF6A26741FB59F9300D5868C /* TestRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRequestViewController.h; sourceTree = "<group>"; };
 		FF6A26751FB59F9300D5868C /* TestRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRequestViewController.m; sourceTree = "<group>"; };
+		FF98C233201EAFFB004A0100 /* BJDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJDownloadViewController.h; sourceTree = "<group>"; };
+		FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJDownloadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -590,6 +593,7 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				FF98C232201EAFE9004A0100 /* BJDownload */,
 				4DCEA6E61FE8A21700B58EC5 /* TreeView */,
 				FF5BC65E1FCFE8B0009E5D35 /* PlistToJson */,
 				FF439FBF1FB981330068A431 /* Download */,
@@ -703,6 +707,15 @@
 				FF6A26751FB59F9300D5868C /* TestRequestViewController.m */,
 			);
 			path = TestRequest;
+			sourceTree = "<group>";
+		};
+		FF98C232201EAFE9004A0100 /* BJDownload */ = {
+			isa = PBXGroup;
+			children = (
+				FF98C233201EAFFB004A0100 /* BJDownloadViewController.h */,
+				FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */,
+			);
+			path = BJDownload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1113,7 +1126,7 @@
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1156,6 +1169,7 @@
 				4DB85E8C1F739C9F0015F1C5 /* UIButton+EdgeInsets.m in Sources */,
 				4DB5E79F1D2605900057A563 /* HPTextViewTapGestureRecognizer.m in Sources */,
 				4D5C79191EF903E70058B51D /* MSStack.m in Sources */,
+				FF98C235201EAFFB004A0100 /* BJDownloadViewController.m in Sources */,
 				4D7226C41F0D1E0600B216A5 /* DataStorageBase.m in Sources */,
 				4DC3D3DA1FE0F6ED00D08758 /* NSArray+NilSafety.m in Sources */,
 				4D6566211F0CEFD90071A94A /* FenbiViewController.m in Sources */,
