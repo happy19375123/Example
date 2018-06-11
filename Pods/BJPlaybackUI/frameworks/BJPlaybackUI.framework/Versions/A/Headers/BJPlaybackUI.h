@@ -14,7 +14,7 @@
 
 #import "BJPRoomViewController.h"
 #import "BJPChatMessageTableViewCell.h"
-#import "BJPTopBarView.h"
+#import "BJPTopbarView.h"
 #import "BJPlayerViewController.h"
 #import "BJPBigImageViewController.h"
 
@@ -34,7 +34,7 @@
 
 #import "UIColor+hex.h"
 #import "UIKit+bjp.h"
-#import "MBProgressHUD+bjp.h"
+#import "MBProgressHUD+bjpb.h"
 
-FOUNDATION_EXPORT NSString * BJPlaybackUIName();
-FOUNDATION_EXPORT NSString * BJPlaybackUIVersion();
+FOUNDATION_EXPORT NSString * BJPlaybackUIName(void);
+FOUNDATION_EXPORT NSString * BJPlaybackUIVersion(void);

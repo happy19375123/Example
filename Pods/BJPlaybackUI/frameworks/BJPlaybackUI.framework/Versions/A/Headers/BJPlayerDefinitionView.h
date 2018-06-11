@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BJPlayerDefinitionView : UIView
 
 @property (nonatomic, copy, nullable) void (^definitionCallback)(PMVideoDefinitionInfoModel *sender);
-@property (nonatomic, copy, nullable) void (^definitionCancelCallback)();
+@property (nonatomic, copy, nullable) void (^definitionCancelCallback)(void);
 
 
 - (instancetype)initWithDefinitionList:(NSArray <__kindof PMVideoDefinitionInfoModel*> *)definitionList

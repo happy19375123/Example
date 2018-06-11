@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PMADWebViewController : UIViewController
 
-@property (copy) void(^dissmissCallBack)();
+@property (copy) void(^dissmissCallBack)(void);
 
 - (instancetype)initWithuRLString:(NSString *)urlString;
 

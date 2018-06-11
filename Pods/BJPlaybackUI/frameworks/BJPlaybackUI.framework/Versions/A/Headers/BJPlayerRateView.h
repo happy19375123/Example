@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BJPlayerRateView : UIView
 
 @property (nonatomic, copy, nullable) void (^rateCallback)(CGFloat rate);
-@property (nonatomic, copy, nullable) void (^rateCancelCallback)();
+@property (nonatomic, copy, nullable) void (^rateCancelCallback)(void);
 
 - (instancetype)initWithCurrentRate:(CGFloat)rate isHorizontal:(BOOL)isHorizontal;
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '291B4B5B57256B663C7DA497C4C3A90C'
+               BlueprintIdentifier = '2119723E04A8E41D4D29203468241BDB'
                BlueprintName = 'ZTKRepoSpec'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libZTKRepoSpec.a'>

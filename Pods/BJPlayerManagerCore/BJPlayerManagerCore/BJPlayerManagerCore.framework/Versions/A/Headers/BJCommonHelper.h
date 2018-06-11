@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "PMPlayerMacro.h"
 
 // 缓存主目录
-#define CACHES_DIRECTORY     [BJCommonHelper sharedBJCommonHelper].rootPath
+#define CACHES_DIRECTORY     [BJCommonHelper sharedCommonHelper].rootPath
 
 // 下载文件的总文件夹
 #define BASE       @"BJDownLoad"
@@ -34,7 +35,8 @@
 /** 下载根路径, 需要传一个 存在的 文件夹 */
 @property (nonatomic, strong) NSString *rootPath;
 
-+ (BJCommonHelper *)sharedBJCommonHelper;
++ (BJCommonHelper *)sharedBJCommonHelper PM_Will_DEPRECATED("sharedCommonHelper");
++ (BJCommonHelper *)sharedCommonHelper;
 
 /** 将文件大小转化成M单位或者B单位 */
 + (NSString *)getFileSizeString:(NSString *)size;

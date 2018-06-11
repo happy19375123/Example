@@ -90,27 +90,27 @@ PODS:
     - QBImagePickerController (~> 3.0)
   - BJLLogStat (0.9.0):
     - BJLiveBase/Networking (~> 1.3.0)
-  - BJPlaybackCore (1.3.0-alpha04):
+  - BJPlaybackCore (1.3.0):
     - BJLiveBase (~> 1.3.0)
     - BJLiveBase/Base
     - BJLiveBase/Ext
     - BJLiveBase/Networking
     - BJLiveBase/YYModel
     - BJLiveCore (~> 1.3.0)
-    - BJPlayerManagerCore (~> 1.3.0-alpha)
-  - BJPlaybackUI (1.3.0-alpha02):
-    - BJPlaybackCore (~> 1.3.0-alpha)
+    - BJPlayerManagerCore (~> 1.3.0)
+  - BJPlaybackUI (1.3.0):
+    - BJPlaybackCore (~> 1.3.0)
     - Masonry
     - MBProgressHUD
-  - BJPlayerManagerCore (1.3.0-alpha07):
+  - BJPlayerManagerCore (1.3.0):
     - ASIHTTPRequest
     - BJLiveBase (~> 1.3.0)
     - BJLiveBase/Base
     - BJLiveBase/Networking
     - BJLiveBase/YYModel
-    - BJLLogStat (~> 0.9.0-alpha)
+    - BJLLogStat (~> 0.9.0)
     - BJVideoPlayer
-  - BJVideoPlayer (0.0.25)
+  - BJVideoPlayer (0.0.26)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -119,12 +119,14 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.13)
-  - MJRefresh (3.1.15.1)
+  - MJRefresh (3.1.15.3)
   - QBImagePickerController (3.4.0)
   - Reachability (3.2)
   - SDWebImage (4.2.3):
     - SDWebImage/Core (= 4.2.3)
   - SDWebImage/Core (4.2.3)
+  - YTKNetwork (2.0.4):
+    - AFNetworking (~> 3.0)
   - ZTKRepoSpec (0.0.3)
 
 DEPENDENCIES:
@@ -138,6 +140,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - SDWebImage (~> 4.2.3)
+  - YTKNetwork (~> 2.0.4)
   - ZTKRepoSpec
 
 SPEC CHECKSUMS:
@@ -147,22 +150,23 @@ SPEC CHECKSUMS:
   BJLiveCore: a877f4ce316dc50cbc2f2ae5d6ef14d11e374c5d
   BJLiveUI: 2e7f24a5ad538f1dad77e1df6684255cbee9fd70
   BJLLogStat: d166f1fe879d7654a22ab99a640a71903189cbda
-  BJPlaybackCore: 218e797eec152b85ca723aa6a2844f42459f3c61
-  BJPlaybackUI: a9996f215fbcfc9c7b5dab1a3d71c23d351ecadd
-  BJPlayerManagerCore: f0622e8f0a4fe889f4e18a3dce688627af78b985
-  BJVideoPlayer: 5ae6786ca8c6bb25aa83df2f08e6a808eb14d6df
+  BJPlaybackCore: 4714a1b8f7861049dc7f9f5c3fb4efe8a320bc2e
+  BJPlaybackUI: 3c0ba1d96f1f1b91b71042a78643ffb7f86e5f39
+  BJPlayerManagerCore: 18f8d25419c6b2291f0e9eebfb3e22c4ab531da1
+  BJVideoPlayer: 6dc63b20c0d55fb2351b2cb9e1c5af34d52c44bb
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   ZTKRepoSpec: f7c1ad81157f8652ca436626a95f6ed04444e907
 
-PODFILE CHECKSUM: 61bd3b848ded9707489672eb0cb400b341c7c018
+PODFILE CHECKSUM: ad4d0f500c050f82c5cb8dfbf532336a81c2d23d
 
 COCOAPODS: 1.3.1

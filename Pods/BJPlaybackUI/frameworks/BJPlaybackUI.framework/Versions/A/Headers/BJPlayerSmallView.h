@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, BJPSmallViewShowType) {
 
 - (void)setTeacherName:(NSString *)name;
 
-@property (nonatomic, copy, nullable) void (^alertCallback)();
+@property (nonatomic, copy, nullable) void (^alertCallback)(void);
 @property (nonatomic) BJPSmallViewShowType showType;
 
 @property (nonatomic, readonly) UIImageView *placeholderImageView;

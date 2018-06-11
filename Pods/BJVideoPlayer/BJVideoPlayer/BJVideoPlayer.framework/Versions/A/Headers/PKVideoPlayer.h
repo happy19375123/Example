@@ -44,11 +44,12 @@ typedef NS_ENUM(NSInteger, PKVideoPlayerPlayStatus) {
 
 @property (nonatomic, strong, readonly) PKVideoPlayerItem *currentPlayerItem;
 
-@property (nonatomic, readonly) CGFloat playerCurrentTime;
+@property (nonatomic, readonly) NSTimeInterval playerCurrentTime;
 
-@property (nonatomic, readonly) CGFloat playerDuration;
+//@property (nonatomic, readonly) CGFloat playerDuration;
+@property (nonatomic, readonly) NSTimeInterval playerDuration;
 
-@property (nonatomic, readonly) CGFloat playerAvailableDuration;
+@property (nonatomic, readonly) NSTimeInterval playerAvailableDuration;
 
 @property (nonatomic, assign) CGFloat rateSpeed; // 播放倍率 default 1.0
 

@@ -8,13 +8,13 @@
 
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface MBProgressHUD (bjp)
+@interface MBProgressHUD (bjpb)
 
-+ (void)bjp_showMessageThenHide:(NSString *)msg toView:(UIView *)view onHide:(void (^)())onHide;
++ (void)bjpb_showMessageThenHide:(NSString *)msg toView:(UIView *)view onHide:(void (^)(void))onHide;
 
-+ (void)bjp_showMessageThenHide:(NSString *)msg
++ (void)bjpb_showMessageThenHide:(NSString *)msg
                          toView:(UIView *)view  yOffset:(CGFloat)offset
-                         onHide:(void (^)())onHide;
+                         onHide:(void (^)(void))onHide;
 
 /**
  *  显示加载中，以及文本消息
@@ -24,9 +24,9 @@
  *
  *  @return 返回当前hud，方便之后hide
  */
-+ (MBProgressHUD*)bjp_showLoading:(NSString *)msg
++ (MBProgressHUD*)bjpb_showLoading:(NSString *)msg
                            toView:(UIView *)view;
 
-+ (void)bjp_closeLoadingView:(UIView *)toView;
++ (void)bjpb_closeLoadingView:(UIView *)toView;
 
 @end

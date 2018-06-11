@@ -48,6 +48,8 @@ typedef NS_ENUM(NSInteger, BJDownloadURLCheckState){
 @property (nonatomic, copy) NSString        *fileURL;
 /** 下载时间 */
 @property (nonatomic, copy) NSString        *time;
+/** 开始下载的时间 */
+@property (nonatomic, copy) NSString        *startTimestampString;
 /** 临时文件路径 */
 @property (nonatomic, copy) NSString        *tempPath;
 /** 文件下载后的路径 */

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVKit/AVKit.h>
 #import "PKMoviePlayback.h"
-#import "PKMovieplayer.h"
+#import "PKMoviePlayer.h"
 #import "PKVideoPlayer.h"
 
 enum {
@@ -165,7 +165,7 @@ typedef NSInteger PKMovieFinishReason;
 @property (nonatomic, assign) CGFloat rateSpeed; // 播放倍率 default 1.0
 
 // iOS 9 iPad 画中画
-@property(nonatomic, strong, readonly) AVPictureInPictureController *pictureControl;
+@property(nonatomic, strong, readonly) AVPictureInPictureController *pictureControl NS_AVAILABLE_IOS(9.0);
 
 
 @property(nonatomic, weak) id<AVPictureInPictureControllerDelegate> pipControlDelegate;

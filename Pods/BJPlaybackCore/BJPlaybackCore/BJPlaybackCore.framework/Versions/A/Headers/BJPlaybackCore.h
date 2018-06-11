@@ -23,7 +23,7 @@
 
 #import "NSDictionary+BJPDataValue.h"
 
-FOUNDATION_EXPORT NSString * BJPlaybackCoreName();
-FOUNDATION_EXPORT NSString * BJPlaybackCoreVersion();
+FOUNDATION_EXPORT NSString * BJPlaybackCoreName(void);
+FOUNDATION_EXPORT NSString * BJPlaybackCoreVersion(void);
 
 #endif /* Header_h */

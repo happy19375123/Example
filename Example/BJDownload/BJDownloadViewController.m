@@ -21,6 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    NSFileManager *filemanager = [NSFileManager defaultManager];
+    NSString *BJYPath = [NSString stringWithFormat:@"%@/bjy",path];
+    if(![filemanager isExecutableFileAtPath:path]){
+        [filemanager createDirectoryAtPath:BJYPath withIntermediateDirectories:NO attributes:nil error:nil];
+    }
+    self.pmDownloadManager;
     [self startDownload];
 }
 
@@ -34,7 +41,7 @@
             if(![filemanager isExecutableFileAtPath:path]){
                 [filemanager createDirectoryAtPath:BJYPath withIntermediateDirectories:NO attributes:nil error:nil];
             }
-            _pmDownloadManager = [[PMDownloadManager alloc]initWithRootPath:BJYPath];
+            _pmDownloadManager = [PMDownloadManager downloadManagerWithRootPath:BJYPath];
             _pmDownloadManager.delegate = self;
         });
     }
@@ -43,12 +50,11 @@
 
 -(void)startDownload{
     //百家云直播回放
-    NSString *webcastid = @"17081868624899";
-    NSString *vodpassword = @"GqWb2ZbzIEWNcup-z1nfawQswJsIPG12KGoegVdZxYNGXzXK0HAAYw";
-    NSString *seesion = @"201708180";
+    NSString *webcastid = @"18012977218266";
+    NSString *vodpassword = @"-hUPEVYHSWGS52C-DRj5zgkPQiPrRCpA3BWZWNK8AlSXc9GfsRv2Xw";
+    NSString *seesion = @"201801290";
     NSString *vodTitleName = @"测试-01";
-
-    [self.pmDownloadManager addDownloadWithClass:webcastid seesionID:@"" token:vodpassword definionArray:@[@0,@1,@2,@3] showFileName:vodTitleName];
+    [self.pmDownloadManager addDownloadWithClass:webcastid seesionID:@"" token:vodpassword definionArray:@[@0,@1,@2,@3,@4] showFileName:vodTitleName creatTime:@"123"];
 }
 
 #pragma mark - PMDownloadDelegate
@@ -57,16 +63,23 @@
 }
 
 - (void)updateProgress:(PMDownloader *)downloader{
-    NSLog(@"progress - %.2f",downloader.downloadModel.progress);
+    static float p = 0;
+    if(downloader.downloadModel.progress - p > 0.005){
+        NSLog(@"progress - %.3f",downloader.downloadModel.progress);
+        p = downloader.downloadModel.progress;
+    }
 }
 
 - (void)finishedDownload:(PMDownloader *)downloader{
     
 }
 
-- (void)downloadFail:(nullable PMDownloader *)downloader beforeDownloadError:(nullable NSError *)error{
-    
+- (void)downloadFail:(nullable PMDownloader *)downloader beforeDownloadError:(nullable PMBeforeDownloadModel *)beforeDownloadModel{
+    NSLog(@"beforeDownloadModel.error.code - %ld",beforeDownloadModel.error.code);
+    if(beforeDownloadModel.error.code == -999){
+        //文件正在下载
+        [self.pmDownloadManager resume:beforeDownloadModel.classId sessionId:nil];
+    }
 }
-
 
 @end

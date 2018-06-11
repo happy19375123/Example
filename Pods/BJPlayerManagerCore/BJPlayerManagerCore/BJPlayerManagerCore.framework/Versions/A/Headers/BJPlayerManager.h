@@ -13,7 +13,29 @@
 #import "PMPlayerMacro.h"
 #import "PMADPlayerView.h"
 
-@protocol BJPMControlProtocol;
+
+#pragma mark - BJPMControlProtocol
+
+@protocol BJPMControlProtocol <NSObject>
+
+- (void)play;
+
+- (void)pause;
+
+- (void)stop;
+
+- (void)seek:(NSTimeInterval)time;
+
+- (void)changeRate:(CGFloat)rate;
+
+/**
+ 变换清晰度
+ 
+ @param dt DT_LOW, DT_HIGH, DT_SUPPERHD
+ */
+- (void)changeDefinition:(PMVideoDefinitionType)dt;
+
+@end
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -121,22 +143,26 @@ NS_ASSUME_NONNULL_BEGIN
                              token:(NSString *)token
                         completion:(void (^)(PMVideoInfoModel  * _Nullable videoInfo, NSError  * _Nullable error))completion;
 
-/**
- 切换到激活状态
- */
-- (void)becomeActivity;
-
-/**
- 切换到后台，也就是末激活状态
- */
-- (void)becomeBackground;
+/** 清空播放器相关信息 */
+- (void)clearPlayer;
 
 /**
  重置水印
  
- 外界当屏幕变化的时候可以重置水印,内部会判断当前食品是否有水印
+ 外界当屏幕变化的时候可以重置水印,内部会判断当前视频是否有水印
  */
 - (void)resetWaterMark;
+
+
+/**
+ 切换到激活状态
+ */
+- (void)becomeActivity PM_DID_DEPRECATED("已废弃") ;
+
+/**
+ 切换到后台，也就是末激活状态
+ */
+- (void)becomeBackground PM_DID_DEPRECATED("已废弃");
 
 @end
 
@@ -155,7 +181,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) PMPlayState playState;
 
 /**
- 视频的时长 支持KVO
+ 视频的时长
  */
 @property (nonatomic, readonly) NSTimeInterval duration;
 
@@ -170,7 +196,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) CGFloat playRate;
 
 /**
- 正片的当前的播放时间, 支持KVO
+ 正片的当前的播放时间,
  */
 @property (nonatomic, readonly) NSTimeInterval currentTime;
 
@@ -217,28 +243,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-#pragma mark - protocol
-
-@protocol BJPMControlProtocol <NSObject>
-
-- (void)play;
-
-- (void)pause;
-
-- (void)stop;
-
-- (void)seek:(NSTimeInterval)time;
-
-- (void)changeRate:(CGFloat)rate;
-
-/**
- 变换清晰度
-
- @param dt DT_LOW, DT_HIGH, DT_SUPPERHD
- */
-- (void)changeDefinition:(PMVideoDefinitionType)dt;
-
-@end
 
 #pragma mark - Deprecated
 

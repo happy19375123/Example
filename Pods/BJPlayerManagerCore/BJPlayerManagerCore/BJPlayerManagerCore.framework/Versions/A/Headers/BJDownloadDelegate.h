@@ -19,6 +19,12 @@
 - (void)allowNextRequest;//处理一个窗口内连续下载多个文件且重复下载的情况
 
 /**
+ 成功获取下载资源的url, 添加到下载数组时的回调
+
+ @param fileModel fileModel
+ */
+- (void)downloadDidAddFileModel:(BJFileModel *)fileModel;
+/**
  错误返回
 
  @param beforeDownload 开始下载之前发生的错误model

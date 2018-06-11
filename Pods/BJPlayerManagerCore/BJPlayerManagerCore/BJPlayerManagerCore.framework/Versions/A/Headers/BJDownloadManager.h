@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak  ) id<BJDownloadDelegate> downloadDelegate;
 /** 设置最大的并发下载个数 */
 @property (nonatomic, assign) NSInteger              maxCount;
-/** 已下载完成的文件列表（文件对象） */
+/** 已下载完成的文件列表（BJFileModel文件对象） */
 @property (atomic, strong, readonly) NSMutableArray  *finishedlist;
 /** 正在下载的文件列表(ASIHttpRequest对象) */
 @property (atomic, strong, readonly) NSMutableArray  *downinglist;
@@ -39,7 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (BJDownloadManager *)sharedDownloadManager;
 
 /** 释放单例, 可用于多账户下载管理 */
-+(void)downloadManagerDealloc;
++(void)downloadManagerDealloc PM_Will_DEPRECATED("downloadManagerDestroy");
++(void)downloadManagerDestroy;
 
 /**
  清除所有正在下载的请求

@@ -12,7 +12,7 @@
 @class PMFLAnimatedImage;
 @protocol PMFLAnimatedImageViewDebugDelegate;
 
-
+NS_ASSUME_NONNULL_BEGIN
 //
 //  An `PMFLAnimatedImageView` can take an `PMFLAnimatedImage` and plays it automatically when in view hierarchy and stops when removed.
 //  The animation can also be controlled with the `UIImageView` methods `-start/stop/isAnimating`.
@@ -23,10 +23,10 @@
 
 // Setting `[UIImageView.image]` to a non-`nil` value clears out existing `animatedImage`.
 // And vice versa, setting `animatedImage` will initially populate the `[UIImageView.image]` to its `posterImage` and then start animating and hold `currentFrame`.
-@property (nonatomic, strong) PMFLAnimatedImage *animatedImage;
-@property (nonatomic, copy) void(^loopCompletionBlock)(NSUInteger loopCountRemaining);
+@property (nonatomic, strong, nullable) PMFLAnimatedImage *animatedImage;
+@property (nonatomic, copy, nullable) void(^loopCompletionBlock)(NSUInteger loopCountRemaining);
 
-@property (nonatomic, strong, readonly) UIImage *currentFrame;
+@property (nonatomic, strong, readonly, nullable) UIImage *currentFrame;
 @property (nonatomic, assign, readonly) NSUInteger currentFrameIndex;
 
 // The animation runloop mode. Enables playback during scrolling by allowing timer events (i.e. animation) with NSRunLoopCommonModes.
@@ -36,3 +36,5 @@
 - (void)pm_setGifImageWithUrl:(nullable NSURL *)url;
 
 @end
+
+NS_ASSUME_NONNULL_END

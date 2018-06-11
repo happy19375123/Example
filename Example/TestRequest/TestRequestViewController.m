@@ -10,6 +10,7 @@
 #import "AFHTTPSessionManager.h"
 #import "AFNetworking.h"
 #import "AFHTTPSessionManager.h"
+#import "SSRequest.h"
 
 @interface TestRequestViewController ()
 
@@ -21,6 +22,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self request];
+    [self ssrequestTest];
 }
 
 //获取cookie
@@ -43,6 +45,21 @@
             NSLog(@"cookies = %@",obj.value);
         }
     }];
+}
+
+-(void)ssrequestTest{
+    NSDictionary *dic = @{@"appid":@"BDAF6B4D-5DC0-4AEF-BCF8-6C7EFC94DE99"};
+    SSRequest *request = [[SSRequest alloc]init];
+    request.requestUrl = @"http://120.92.93.120/mapi_v2/User/quitregist";
+    request.requestArgument = dic;
+    request.requestMethod = YTKRequestMethodGET;
+    request.requestSerializerType = YTKRequestSerializerTypeJSON;
+    [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
+        
+    } failure:^(__kindof YTKBaseRequest *request) {
+        
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

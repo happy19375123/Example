@@ -14,6 +14,7 @@
 #import "PMAppConfig.h"
 #import "BJPlayerManager.h"
 #import "BJDownloadManager.h"
+#import "PMDownloadManager.h"
 
 #import "PMPlayerMacro.h"
 #import "PMNotification.h"
@@ -24,8 +25,8 @@
 #import "NSDictionary+BJPM.h"
 #import "NSObject+imageSize.h"
 
-FOUNDATION_EXPORT NSString * BJPlayerMangaerCoreName();
-FOUNDATION_EXPORT NSString * BJPlayerMangaerCoreVersion();
+FOUNDATION_EXPORT NSString * BJPlayerMangaerCoreName(void);
+FOUNDATION_EXPORT NSString * BJPlayerMangaerCoreVersion(void);
 
 
 #endif /* BJPlayerMangaerCore_h */

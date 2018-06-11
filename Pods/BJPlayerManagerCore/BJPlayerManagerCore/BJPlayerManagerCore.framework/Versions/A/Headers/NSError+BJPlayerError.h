@@ -17,7 +17,8 @@ typedef NS_ENUM(NSUInteger, BJPMErrorCode) {
     BJPMErrorCodeWIFI              = 1005,    //wifi
     BJPMErrorCodeServer            = 1006,    //server端返回的错误
     BJPMErrorCodeApp               = 1007,    //app端的错误
-    BJPMErrorCodeDownloadInvalid   = 1010,    //下载的url失效
+    BJPMErrorCodeDownloadInvalid   = 1010,    //url失效
+    BJPMErrorCodeMissFile          = 1011,    //下载的文件丢失
 };
 
 #define BJPMErrorDomain  @"BJPMErrorDomain"

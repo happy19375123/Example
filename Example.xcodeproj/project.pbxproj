@@ -83,7 +83,11 @@
 		FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */; };
 		FF5BC6671FCFE9BD009E5D35 /* tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC6661FCFE9BD009E5D35 /* tree.plist */; };
 		FF6A26761FB59F9300D5868C /* TestRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6A26751FB59F9300D5868C /* TestRequestViewController.m */; };
+		FF7C450A20AD9293007BB854 /* SMTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450420AD9293007BB854 /* SMTopWindow.m */; };
+		FF7C450B20AD9293007BB854 /* SMPagerTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450520AD9293007BB854 /* SMPagerTabView.m */; };
+		FF7C450C20AD9293007BB854 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450720AD9293007BB854 /* UIViewAdditions.m */; };
 		FF98C235201EAFFB004A0100 /* BJDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */; };
+		FFF0737A20A2D634009A3CAE /* SSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0737920A2D634009A3CAE /* SSRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,8 +255,16 @@
 		FF5BC6661FCFE9BD009E5D35 /* tree.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tree.plist; sourceTree = "<group>"; };
 		FF6A26741FB59F9300D5868C /* TestRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRequestViewController.h; sourceTree = "<group>"; };
 		FF6A26751FB59F9300D5868C /* TestRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRequestViewController.m; sourceTree = "<group>"; };
+		FF7C450420AD9293007BB854 /* SMTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTopWindow.m; sourceTree = "<group>"; };
+		FF7C450520AD9293007BB854 /* SMPagerTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPagerTabView.m; sourceTree = "<group>"; };
+		FF7C450620AD9293007BB854 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		FF7C450720AD9293007BB854 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		FF7C450820AD9293007BB854 /* SMPagerTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPagerTabView.h; sourceTree = "<group>"; };
+		FF7C450920AD9293007BB854 /* SMTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTopWindow.h; sourceTree = "<group>"; };
 		FF98C233201EAFFB004A0100 /* BJDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJDownloadViewController.h; sourceTree = "<group>"; };
 		FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJDownloadViewController.m; sourceTree = "<group>"; };
+		FFF0737820A2D634009A3CAE /* SSRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRequest.h; sourceTree = "<group>"; };
+		FFF0737920A2D634009A3CAE /* SSRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -593,6 +605,8 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				FF7C450220AD9293007BB854 /* Segment */,
+				FFF0737720A2D61A009A3CAE /* SSNetwork */,
 				FF98C232201EAFE9004A0100 /* BJDownload */,
 				4DCEA6E61FE8A21700B58EC5 /* TreeView */,
 				FF5BC65E1FCFE8B0009E5D35 /* PlistToJson */,
@@ -709,6 +723,27 @@
 			path = TestRequest;
 			sourceTree = "<group>";
 		};
+		FF7C450220AD9293007BB854 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				FF7C450320AD9293007BB854 /* SMPagerTabView */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		FF7C450320AD9293007BB854 /* SMPagerTabView */ = {
+			isa = PBXGroup;
+			children = (
+				FF7C450420AD9293007BB854 /* SMTopWindow.m */,
+				FF7C450520AD9293007BB854 /* SMPagerTabView.m */,
+				FF7C450620AD9293007BB854 /* UIViewAdditions.h */,
+				FF7C450720AD9293007BB854 /* UIViewAdditions.m */,
+				FF7C450820AD9293007BB854 /* SMPagerTabView.h */,
+				FF7C450920AD9293007BB854 /* SMTopWindow.h */,
+			);
+			path = SMPagerTabView;
+			sourceTree = "<group>";
+		};
 		FF98C232201EAFE9004A0100 /* BJDownload */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +751,15 @@
 				FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */,
 			);
 			path = BJDownload;
+			sourceTree = "<group>";
+		};
+		FFF0737720A2D61A009A3CAE /* SSNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				FFF0737820A2D634009A3CAE /* SSRequest.h */,
+				FFF0737920A2D634009A3CAE /* SSRequest.m */,
+			);
+			path = SSNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1206,13 +1250,16 @@
 				4DAA69011BF5BB680026F7DA /* UIView+LayoutFrame.m in Sources */,
 				4DEDD88A1BD8778C008BAF8B /* AppDelegate.m in Sources */,
 				4DEDD8871BD8778C008BAF8B /* main.m in Sources */,
+				FF7C450B20AD9293007BB854 /* SMPagerTabView.m in Sources */,
 				4D16147E1D2534BF00606309 /* TextKitViewController.m in Sources */,
 				4D5C79171EF903E70058B51D /* MSParser.m in Sources */,
 				4DB5E7A31D26090E0057A563 /* CoreAnimationViewController.m in Sources */,
 				4DA49BB01D41526600C8B322 /* GVUserDefaults.m in Sources */,
 				4D21E9561D4A203E00FCD270 /* UIViewController+ESSeparatorInset.m in Sources */,
+				FFF0737A20A2D634009A3CAE /* SSRequest.m in Sources */,
 				4D7226C01F0D1D3F00B216A5 /* FenbiDataStorage.m in Sources */,
 				4DC3D3AE1FE0F67300D08758 /* NSObject+swizzle.m in Sources */,
+				FF7C450A20AD9293007BB854 /* SMTopWindow.m in Sources */,
 				4D7226BD1F0D10B900B216A5 /* FenbiLectureModel.m in Sources */,
 				4DB5E7A91D260A5E0057A563 /* SSGradientCircleView.m in Sources */,
 				4D5C79181EF903E70058B51D /* MSScaner.m in Sources */,
@@ -1220,6 +1267,7 @@
 				4D5C79161EF903E70058B51D /* MSElementTable.m in Sources */,
 				4D5C791F1EF903E70058B51D /* MSNumber.m in Sources */,
 				4DAFAAD71BF1D063009D522B /* SSCalendarDayCollectionViewCell.m in Sources */,
+				FF7C450C20AD9293007BB854 /* UIViewAdditions.m in Sources */,
 				4D5C78F61EF8FCA60058B51D /* CalculatorViewController.m in Sources */,
 				FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */,
 				4D5C791A1EF903E70058B51D /* NSError+MSExpression.m in Sources */,

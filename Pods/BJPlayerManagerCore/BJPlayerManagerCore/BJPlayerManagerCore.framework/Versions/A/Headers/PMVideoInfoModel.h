@@ -96,6 +96,7 @@ typedef NS_ENUM(NSInteger, PMVideoADType){
 @property (assign, nonatomic) long long partnerId;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *guid;
+@property (strong, nonatomic) NSString *coverURL; //视频封面图片
 @property (strong, nonatomic) NSString *shotScreenImage;
 @property (strong, nonatomic) NSString *startVideo;
 @property (strong, nonatomic) NSString *endVideo;

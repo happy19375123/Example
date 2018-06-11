@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL audio_on, video_on, audio_mixed;
 @property (nonatomic) NSString *data, *class_id;
-@property (nonatomic) BJLUser *user;
+@property (nonatomic) BJLOnlineUser *user;
 @property (nonatomic) NSInteger offsetTimestamp;
 @property (nonatomic) NSInteger publish_index;
 

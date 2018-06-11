@@ -11,9 +11,9 @@
 
 @interface PKVideoPlayerItem : NSObject <PKVideoPlayerItem>
 
-@property (nonatomic, strong) NSURL *URL;         //<PKVideoPlayerItem>
+@property (nonatomic, strong) NSURL *URL;
 
-@property (nonatomic, assign) CGFloat beginTime;  //<PKVideoPlayerItem>
+@property (nonatomic, assign) CGFloat beginTime;  
 
 + (PKVideoPlayerItem *)itemWithURL:(NSURL *)URL;
 

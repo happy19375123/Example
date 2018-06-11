@@ -14,4 +14,5 @@ target ‘Example’ do
     pod 'FMDB', '~> 2.6.2'
     pod 'BJLiveUI', '~> 1.3.0'
     pod 'BJPlaybackUI', '~> 1.3.0-alpha02'
+    pod 'YTKNetwork', '~> 2.0.4'
 end
