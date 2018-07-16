@@ -82,11 +82,14 @@
 		FF439FC21FB981410068A431 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF439FC11FB981410068A431 /* DownloadViewController.m */; };
 		FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */; };
 		FF5BC6671FCFE9BD009E5D35 /* tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC6661FCFE9BD009E5D35 /* tree.plist */; };
+		FF660F5020D264ED000FEF61 /* LawChinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF660F4F20D264ED000FEF61 /* LawChinaViewController.m */; };
+		FF660F5220D26503000FEF61 /* lawen.db in Resources */ = {isa = PBXBuildFile; fileRef = FF660F5120D26503000FEF61 /* lawen.db */; };
 		FF6A26761FB59F9300D5868C /* TestRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6A26751FB59F9300D5868C /* TestRequestViewController.m */; };
 		FF7C450A20AD9293007BB854 /* SMTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450420AD9293007BB854 /* SMTopWindow.m */; };
 		FF7C450B20AD9293007BB854 /* SMPagerTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450520AD9293007BB854 /* SMPagerTabView.m */; };
 		FF7C450C20AD9293007BB854 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450720AD9293007BB854 /* UIViewAdditions.m */; };
 		FF98C235201EAFFB004A0100 /* BJDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */; };
+		FFEABE2120F8978E005A5937 /* BJL_EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEABE2020F8978E005A5937 /* BJL_EXTScope.m */; };
 		FFF0737A20A2D634009A3CAE /* SSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0737920A2D634009A3CAE /* SSRequest.m */; };
 /* End PBXBuildFile section */
 
@@ -253,6 +256,9 @@
 		FF5BC65F1FCFE8C8009E5D35 /* PlistToJsonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistToJsonViewController.h; sourceTree = "<group>"; };
 		FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistToJsonViewController.m; sourceTree = "<group>"; };
 		FF5BC6661FCFE9BD009E5D35 /* tree.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tree.plist; sourceTree = "<group>"; };
+		FF660F4E20D264ED000FEF61 /* LawChinaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LawChinaViewController.h; sourceTree = "<group>"; };
+		FF660F4F20D264ED000FEF61 /* LawChinaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawChinaViewController.m; sourceTree = "<group>"; };
+		FF660F5120D26503000FEF61 /* lawen.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = lawen.db; sourceTree = "<group>"; };
 		FF6A26741FB59F9300D5868C /* TestRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRequestViewController.h; sourceTree = "<group>"; };
 		FF6A26751FB59F9300D5868C /* TestRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRequestViewController.m; sourceTree = "<group>"; };
 		FF7C450420AD9293007BB854 /* SMTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTopWindow.m; sourceTree = "<group>"; };
@@ -263,6 +269,9 @@
 		FF7C450920AD9293007BB854 /* SMTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTopWindow.h; sourceTree = "<group>"; };
 		FF98C233201EAFFB004A0100 /* BJDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJDownloadViewController.h; sourceTree = "<group>"; };
 		FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJDownloadViewController.m; sourceTree = "<group>"; };
+		FFEABE1E20F8978E005A5937 /* BJL_EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJL_EXTScope.h; sourceTree = "<group>"; };
+		FFEABE1F20F8978E005A5937 /* BJL_metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJL_metamacros.h; sourceTree = "<group>"; };
+		FFEABE2020F8978E005A5937 /* BJL_EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJL_EXTScope.m; sourceTree = "<group>"; };
 		FFF0737820A2D634009A3CAE /* SSRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRequest.h; sourceTree = "<group>"; };
 		FFF0737920A2D634009A3CAE /* SSRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -428,6 +437,7 @@
 		4DAA68F51BF5B3440026F7DA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				FFEABE1D20F8978E005A5937 /* BJL */,
 				4DC3D3AA1FE0F67300D08758 /* swizzleMethod */,
 				4D21E9541D4A203E00FCD270 /* UIViewController+ESSeparatorInset.h */,
 				4D21E9551D4A203E00FCD270 /* UIViewController+ESSeparatorInset.m */,
@@ -605,6 +615,7 @@
 		4DEDD8841BD8778C008BAF8B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				FF660F4D20D264DB000FEF61 /* LawChina */,
 				FF7C450220AD9293007BB854 /* Segment */,
 				FFF0737720A2D61A009A3CAE /* SSNetwork */,
 				FF98C232201EAFE9004A0100 /* BJDownload */,
@@ -714,6 +725,16 @@
 			path = PlistToJson;
 			sourceTree = "<group>";
 		};
+		FF660F4D20D264DB000FEF61 /* LawChina */ = {
+			isa = PBXGroup;
+			children = (
+				FF660F5120D26503000FEF61 /* lawen.db */,
+				FF660F4E20D264ED000FEF61 /* LawChinaViewController.h */,
+				FF660F4F20D264ED000FEF61 /* LawChinaViewController.m */,
+			);
+			path = LawChina;
+			sourceTree = "<group>";
+		};
 		FF6A26731FB59F8000D5868C /* TestRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +772,17 @@
 				FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */,
 			);
 			path = BJDownload;
+			sourceTree = "<group>";
+		};
+		FFEABE1D20F8978E005A5937 /* BJL */ = {
+			isa = PBXGroup;
+			children = (
+				FFEABE1E20F8978E005A5937 /* BJL_EXTScope.h */,
+				FFEABE1F20F8978E005A5937 /* BJL_metamacros.h */,
+				FFEABE2020F8978E005A5937 /* BJL_EXTScope.m */,
+			);
+			name = BJL;
+			path = Tool/BJL;
 			sourceTree = "<group>";
 		};
 		FFF0737720A2D61A009A3CAE /* SSNetwork */ = {
@@ -874,6 +906,7 @@
 				4DEDD8951BD8778C008BAF8B /* LaunchScreen.storyboard in Resources */,
 				4DEA47451D2123E90033FE22 /* IMG_0425.JPG in Resources */,
 				4DEA47441D2123E90033FE22 /* IMG_0359.JPG in Resources */,
+				FF660F5220D26503000FEF61 /* lawen.db in Resources */,
 				FF0370CF1FD3F45300C272D0 /* knowledgeTree_htfi.plist in Resources */,
 				4DFA40B41D210F7000987D10 /* Icon.png in Resources */,
 				4DEDD8921BD8778C008BAF8B /* Assets.xcassets in Resources */,
@@ -1227,6 +1260,7 @@
 				FF439FC21FB981410068A431 /* DownloadViewController.m in Sources */,
 				4D165F871D88082000F85FFB /* GameCenterViewController.m in Sources */,
 				4D5C79201EF903E70058B51D /* MSOperator.m in Sources */,
+				FFEABE2120F8978E005A5937 /* BJL_EXTScope.m in Sources */,
 				4DC3D3A91FE0F20200D08758 /* NullSafe.m in Sources */,
 				4DB5E7A81D260A5E0057A563 /* SSBrokenLineView.m in Sources */,
 				4DC3D3D91FE0F6ED00D08758 /* NilSafetyManager.m in Sources */,
@@ -1249,6 +1283,7 @@
 				4DEDD88D1BD8778C008BAF8B /* ViewController.m in Sources */,
 				4DAA69011BF5BB680026F7DA /* UIView+LayoutFrame.m in Sources */,
 				4DEDD88A1BD8778C008BAF8B /* AppDelegate.m in Sources */,
+				FF660F5020D264ED000FEF61 /* LawChinaViewController.m in Sources */,
 				4DEDD8871BD8778C008BAF8B /* main.m in Sources */,
 				FF7C450B20AD9293007BB854 /* SMPagerTabView.m in Sources */,
 				4D16147E1D2534BF00606309 /* TextKitViewController.m in Sources */,
@@ -1420,6 +1455,56 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/ASIHTTPRequest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLLogStat\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLiveBase\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLiveCore\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLiveUI\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJPlaybackCore\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJPlaybackUI\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJPlayerManagerCore\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJVideoPlayer\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/QBImagePickerController\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/YTKNetwork\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/ZTKRepoSpec\"",
+					"-DSQLITE_HAS_CODEC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ss.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1440,6 +1525,56 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/ASIHTTPRequest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLLogStat\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLiveBase\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLiveCore\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJLiveUI\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJPlaybackCore\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJPlaybackUI\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJPlayerManagerCore\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/BJVideoPlayer\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/QBImagePickerController\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/YTKNetwork\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/ZTKRepoSpec\"",
+					"-DSQLITE_HAS_CODEC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ss.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -13,6 +13,7 @@
 #import "UITableView+EdgeInset.h"
 #import "UITableViewCell+EdgeInset.h"
 #import "UIViewController+ESSeparatorInset.h"
+#import "BJL_EXTScope.h"
 
 @interface SSTool : NSObject
 

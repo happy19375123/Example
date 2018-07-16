@@ -11,8 +11,10 @@ target ‘Example’ do
     pod 'IQKeyboardManager', '~> 3.3.7’
     pod 'ZTKRepoSpec'
     pod 'AFNetworking', '~> 3.1.0'
-    pod 'FMDB', '~> 2.6.2'
+    pod 'FMDB', '~> 2.1.0'
     pod 'BJLiveUI', '~> 1.3.0'
     pod 'BJPlaybackUI', '~> 1.3.0-alpha02'
     pod 'YTKNetwork', '~> 2.0.4'
+    #pod 'WCDB', '~> 1.0.6'
+    pod 'Ono', '~> 2.0.0'
 end

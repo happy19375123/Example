@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, YTKRequestMethod) {
 
 ///  Request serializer type.
 typedef NS_ENUM(NSInteger, YTKRequestSerializerType) {
-    YTKRequestSerializerTypeHTTP = 0,
+    YTKRequestSerializerTypeHTTP = 1,
     YTKRequestSerializerTypeJSON,
 };
 
@@ -52,7 +52,7 @@ typedef NS_ENUM(NSInteger, YTKRequestSerializerType) {
 ///  the type of `responseObject`.
 typedef NS_ENUM(NSInteger, YTKResponseSerializerType) {
     /// NSData type
-    YTKResponseSerializerTypeHTTP,
+    YTKResponseSerializerTypeHTTP = 1,
     /// JSON object type
     YTKResponseSerializerTypeJSON,
     /// NSXMLParser type

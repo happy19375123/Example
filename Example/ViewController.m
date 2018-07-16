@@ -24,7 +24,7 @@
     NSLog(@"%@",stringPath);
     self.title = @"Example";
     self.view.backgroundColor = [UIColor whiteColor];
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -43,6 +43,7 @@
                       @"DownloadViewController",
                       @"NilSafeViewController",
                       @"BJDownloadViewController",
+                      @"LawChinaViewController",
                       nil];
     
     _viewControllerArray = [[NSArray alloc]initWithObjects:
@@ -59,6 +60,7 @@
                             @"DownloadViewController",
                             @"NilSafeViewController",
                             @"BJDownloadViewController",
+                            @"LawChinaViewController",
                             nil];
 
     //适配ios7

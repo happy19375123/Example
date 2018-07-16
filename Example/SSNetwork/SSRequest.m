@@ -118,6 +118,15 @@
     }
 }
 
+-(YTKResponseSerializerType)responseSerializerType{
+    if(_responseSerializerType){
+        return _responseSerializerType;
+    }else{
+        return YTKResponseSerializerTypeJSON;
+    }
+
+}
+
 - (NSArray *)requestAuthorizationHeaderFieldArray {
     if(_requestAuthorizationHeaderFieldArray){
         return _requestAuthorizationHeaderFieldArray;

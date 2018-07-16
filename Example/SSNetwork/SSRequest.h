@@ -29,6 +29,7 @@ typedef void(^CacheFileNameFilterForRequestArgumentBlock)(id _Nullable argument)
 @property(nonatomic,assign,nullable) CacheFileNameFilterForRequestArgumentBlock cacheFileNameFilterBlock;
 @property(nonatomic,assign) YTKRequestMethod requestMethod;
 @property(nonatomic,assign) YTKRequestSerializerType requestSerializerType;
+@property(nonatomic,assign) YTKResponseSerializerType responseSerializerType;
 @property(nonatomic,strong,nullable) NSArray *requestAuthorizationHeaderFieldArray;
 @property(nonatomic,strong,nullable) NSDictionary *requestHeaderFieldValueDictionary;
 @property(nonatomic,strong,nullable) NSURLRequest *buildCustomUrlRequest;
