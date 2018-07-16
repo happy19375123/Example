@@ -1,6 +1,0 @@
-framework module BJLLogStat {
-  umbrella header "BJLLogStat.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module BJLiveUI {
-  umbrella header "BJLiveUI.h"
-
-  export *
-  module * { export * }
-}

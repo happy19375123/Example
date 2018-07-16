@@ -1,1 +1,0 @@
-../../../BJLiveBase/YYModel/BJLYYModel.h

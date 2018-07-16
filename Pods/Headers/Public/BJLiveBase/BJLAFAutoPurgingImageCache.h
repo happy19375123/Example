@@ -1,1 +1,0 @@
-../../../BJLiveBase/BJLNetworking/UIKit+AFNetworking/BJLAFAutoPurgingImageCache.h
