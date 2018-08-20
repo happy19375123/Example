@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LawModel.h"
 
 @interface LawChinaViewController : UIViewController
 

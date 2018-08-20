@@ -25,10 +25,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self configdefaultData];
-    [self request];
-    [self ssrequestTest];
-    [self requestLawInfo];
+    //[self request];
+    //[self ssrequestTest];
+    //[self requestLawInfo];
     //[self startTimer];
+    [self yingke_requestTest];
 }
 
 -(void)configdefaultData{
@@ -105,6 +106,23 @@
     }];
     self.lawID++;
 }
+
+//https://service.inke.cn/api/user_feed/recommend?gender=1&user_level=9&longitude=200&location=%2C%2C&offset=0&session_id=1534315285&latitude=200&lc=0000000000000107&cc=TG0001&cv=IK6.1.45_Iphone&proto=13&idfa=1C6E6DAE-E9CD-409E-9DE3-CE049F43D77C&idfv=310BD347-E30F-4848-87D5-FC35332AF1ED&devi=34f90112fe774df2accfe8a07e65da8fc64585be&osversion=ios_11.400000&ua=iPhone10_1&imei=&imsi=&uid=168011&sid=20XvWhlzmkWzEAi1lsHxyY0hGYWQ9dcMVdLtKVxnepUOFW8DnUi3&conn=unknown&mtid=&mtxid=&logid=266,281,282,285,226,230&smid=D2IF6BklWVLQgxIpU6ER%2BSR5g0AGjMMo5oUG7BadHTvZ4Xd4&ast=1
+//映客接口测试
+-(void)yingke_requestTest{
+    NSDictionary *dic = @{@"appid":@"BDAF6B4D-5DC0-4AEF-BCF8-6C7EFC94DE99"};
+    SSRequest *request = [[SSRequest alloc]init];
+    request.requestUrl = @"https://service.inke.cn/api/user_feed/recommend?gender=1&user_level=9&longitude=200&location=%2C%2C&offset=0&session_id=1534315285&latitude=200&lc=0000000000000107&cc=TG0001&cv=IK6.1.45_Iphone&proto=13&idfa=1C6E6DAE-E9CD-409E-9DE3-CE049F43D77C&idfv=310BD347-E30F-4848-87D5-FC35332AF1ED&devi=34f90112fe774df2accfe8a07e65da8fc64585be&osversion=ios_11.400000&ua=iPhone10_1&imei=&imsi=&uid=168011&sid=20XvWhlzmkWzEAi1lsHxyY0hGYWQ9dcMVdLtKVxnepUOFW8DnUi3&conn=unknown&mtid=&mtxid=&logid=266,281,282,285,226,230&smid=D2IF6BklWVLQgxIpU6ER%2BSR5g0AGjMMo5oUG7BadHTvZ4Xd4&ast=1";
+    request.requestArgument = nil;
+    request.requestMethod = YTKRequestMethodGET;
+    request.requestSerializerType = YTKRequestSerializerTypeJSON;
+    [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
+        
+    } failure:^(__kindof YTKBaseRequest *request) {
+        
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

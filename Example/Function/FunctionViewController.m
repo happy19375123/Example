@@ -110,6 +110,18 @@
     NSLog(@"base64String = %@",base64String);
 }
 
+//-(NSString *)regexString:(NSString *)baseString{
+//    //law/searchTitleDetail?LawID=403315&Query
+//    NSString *regex = @"^.*law/searchTitleDetail?LawID=+[0-9]+&Query$";
+//    NSPredicate *test = [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex] evaluateWithObject:baseString];
+//    if([test evaluateWithObject:baseString]){
+//        return regex;
+//    }else{
+//        return nil;
+//    }
+//}
+
+
 #pragma mark - 获取目录大小
 -(void)testFileSize{
     NSString *stringPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];

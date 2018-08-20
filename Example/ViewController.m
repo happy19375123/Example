@@ -42,7 +42,6 @@
                       @"PlistToJsonViewController",
                       @"DownloadViewController",
                       @"NilSafeViewController",
-                      @"BJDownloadViewController",
                       @"LawChinaViewController",
                       nil];
     
@@ -59,7 +58,6 @@
                             @"PlistToJsonViewController",
                             @"DownloadViewController",
                             @"NilSafeViewController",
-                            @"BJDownloadViewController",
                             @"LawChinaViewController",
                             nil];
 

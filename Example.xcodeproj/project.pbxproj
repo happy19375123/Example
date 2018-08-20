@@ -79,6 +79,11 @@
 		4DFC8C401BF887C100069EE8 /* UIView+BelongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC8C3F1BF887C100069EE8 /* UIView+BelongViewController.m */; };
 		B3761D46C1EA844E49001956 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F30B5B6A382CB57C666C98 /* libPods-Example.a */; };
 		FF0370CF1FD3F45300C272D0 /* knowledgeTree_htfi.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0370CE1FD3F45300C272D0 /* knowledgeTree_htfi.plist */; };
+		FF0CB61120FF3338000D08E0 /* LawModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CB61020FF3338000D08E0 /* LawModel.m */; };
+		FF3F8C3A21075E89004F41A3 /* LawChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3F8C3921075E89004F41A3 /* LawChapterModel.m */; };
+		FF3F8C3D21075EBD004F41A3 /* LawItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3F8C3C21075EBD004F41A3 /* LawItemModel.m */; };
+		FF3F8C402108240B004F41A3 /* LawDataRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3F8C3F2108240B004F41A3 /* LawDataRequestTool.m */; };
+		FF3F8C44210873CB004F41A3 /* LawEffectLevelRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3F8C43210873CB004F41A3 /* LawEffectLevelRequestTool.m */; };
 		FF439FC21FB981410068A431 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF439FC11FB981410068A431 /* DownloadViewController.m */; };
 		FF5BC6611FCFE8C8009E5D35 /* PlistToJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC6601FCFE8C8009E5D35 /* PlistToJsonViewController.m */; };
 		FF5BC6671FCFE9BD009E5D35 /* tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC6661FCFE9BD009E5D35 /* tree.plist */; };
@@ -89,6 +94,7 @@
 		FF7C450B20AD9293007BB854 /* SMPagerTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450520AD9293007BB854 /* SMPagerTabView.m */; };
 		FF7C450C20AD9293007BB854 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7C450720AD9293007BB854 /* UIViewAdditions.m */; };
 		FF98C235201EAFFB004A0100 /* BJDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */; };
+		FFDB4D402109DCC300B5358E /* 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = FFDB4D3F2109DCC300B5358E /* 2.txt */; };
 		FFEABE2120F8978E005A5937 /* BJL_EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEABE2020F8978E005A5937 /* BJL_EXTScope.m */; };
 		FFF0737A20A2D634009A3CAE /* SSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0737920A2D634009A3CAE /* SSRequest.m */; };
 /* End PBXBuildFile section */
@@ -251,6 +257,16 @@
 		4DFC8C3F1BF887C100069EE8 /* UIView+BelongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BelongViewController.m"; path = "Tool/UIView+BelongViewController.m"; sourceTree = "<group>"; };
 		A0F30B5B6A382CB57C666C98 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0370CE1FD3F45300C272D0 /* knowledgeTree_htfi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = knowledgeTree_htfi.plist; sourceTree = "<group>"; };
+		FF0CB60F20FF3338000D08E0 /* LawModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LawModel.h; sourceTree = "<group>"; };
+		FF0CB61020FF3338000D08E0 /* LawModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawModel.m; sourceTree = "<group>"; };
+		FF3F8C3821075E89004F41A3 /* LawChapterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LawChapterModel.h; sourceTree = "<group>"; };
+		FF3F8C3921075E89004F41A3 /* LawChapterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawChapterModel.m; sourceTree = "<group>"; };
+		FF3F8C3B21075EBD004F41A3 /* LawItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LawItemModel.h; sourceTree = "<group>"; };
+		FF3F8C3C21075EBD004F41A3 /* LawItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawItemModel.m; sourceTree = "<group>"; };
+		FF3F8C3E2108240B004F41A3 /* LawDataRequestTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LawDataRequestTool.h; sourceTree = "<group>"; };
+		FF3F8C3F2108240B004F41A3 /* LawDataRequestTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawDataRequestTool.m; sourceTree = "<group>"; };
+		FF3F8C42210873CB004F41A3 /* LawEffectLevelRequestTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LawEffectLevelRequestTool.h; sourceTree = "<group>"; };
+		FF3F8C43210873CB004F41A3 /* LawEffectLevelRequestTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawEffectLevelRequestTool.m; sourceTree = "<group>"; };
 		FF439FC01FB981410068A431 /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
 		FF439FC11FB981410068A431 /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		FF5BC65F1FCFE8C8009E5D35 /* PlistToJsonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistToJsonViewController.h; sourceTree = "<group>"; };
@@ -269,6 +285,7 @@
 		FF7C450920AD9293007BB854 /* SMTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTopWindow.h; sourceTree = "<group>"; };
 		FF98C233201EAFFB004A0100 /* BJDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJDownloadViewController.h; sourceTree = "<group>"; };
 		FF98C234201EAFFB004A0100 /* BJDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJDownloadViewController.m; sourceTree = "<group>"; };
+		FFDB4D3F2109DCC300B5358E /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.txt; sourceTree = "<group>"; };
 		FFEABE1E20F8978E005A5937 /* BJL_EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJL_EXTScope.h; sourceTree = "<group>"; };
 		FFEABE1F20F8978E005A5937 /* BJL_metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJL_metamacros.h; sourceTree = "<group>"; };
 		FFEABE2020F8978E005A5937 /* BJL_EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJL_EXTScope.m; sourceTree = "<group>"; };
@@ -728,9 +745,20 @@
 		FF660F4D20D264DB000FEF61 /* LawChina */ = {
 			isa = PBXGroup;
 			children = (
+				FFDB4D3F2109DCC300B5358E /* 2.txt */,
 				FF660F5120D26503000FEF61 /* lawen.db */,
 				FF660F4E20D264ED000FEF61 /* LawChinaViewController.h */,
 				FF660F4F20D264ED000FEF61 /* LawChinaViewController.m */,
+				FF0CB60F20FF3338000D08E0 /* LawModel.h */,
+				FF0CB61020FF3338000D08E0 /* LawModel.m */,
+				FF3F8C3821075E89004F41A3 /* LawChapterModel.h */,
+				FF3F8C3921075E89004F41A3 /* LawChapterModel.m */,
+				FF3F8C3B21075EBD004F41A3 /* LawItemModel.h */,
+				FF3F8C3C21075EBD004F41A3 /* LawItemModel.m */,
+				FF3F8C3E2108240B004F41A3 /* LawDataRequestTool.h */,
+				FF3F8C3F2108240B004F41A3 /* LawDataRequestTool.m */,
+				FF3F8C42210873CB004F41A3 /* LawEffectLevelRequestTool.h */,
+				FF3F8C43210873CB004F41A3 /* LawEffectLevelRequestTool.m */,
 			);
 			path = LawChina;
 			sourceTree = "<group>";
@@ -907,6 +935,7 @@
 				4DEA47451D2123E90033FE22 /* IMG_0425.JPG in Resources */,
 				4DEA47441D2123E90033FE22 /* IMG_0359.JPG in Resources */,
 				FF660F5220D26503000FEF61 /* lawen.db in Resources */,
+				FFDB4D402109DCC300B5358E /* 2.txt in Resources */,
 				FF0370CF1FD3F45300C272D0 /* knowledgeTree_htfi.plist in Resources */,
 				4DFA40B41D210F7000987D10 /* Icon.png in Resources */,
 				4DEDD8921BD8778C008BAF8B /* Assets.xcassets in Resources */,
@@ -1028,6 +1057,7 @@
 				4DB5E7A81D260A5E0057A563 /* SSBrokenLineView.m in Sources */,
 				4DC3D3D91FE0F6ED00D08758 /* NilSafetyManager.m in Sources */,
 				4DAFAADA1BF1DA96009D522B /* SSCalendarTool.m in Sources */,
+				FF0CB61120FF3338000D08E0 /* LawModel.m in Sources */,
 				4DAFAAC91BEA21B1009D522B /* Note.m in Sources */,
 				4D5C79221EF903E70058B51D /* MSValueOperator.m in Sources */,
 				4DC3D3DC1FE0F6ED00D08758 /* NSNull+NilSafety.m in Sources */,
@@ -1036,6 +1066,7 @@
 				4DEE7C701BF42C7500778563 /* SSCalendarCollectionViewFlowLayout.m in Sources */,
 				4DB5E7AF1D2614C50057A563 /* SSRadarView.m in Sources */,
 				4D0E8DA21BD8F811008CAAB4 /* FunctionViewController.m in Sources */,
+				FF3F8C3D21075EBD004F41A3 /* LawItemModel.m in Sources */,
 				4DAA68F81BF5B3580026F7DA /* SSTool.m in Sources */,
 				4DAA68FE1BF5B4EB0026F7DA /* NSString+SSExtension.m in Sources */,
 				FF6A26761FB59F9300D5868C /* TestRequestViewController.m in Sources */,
@@ -1049,10 +1080,13 @@
 				FF660F5020D264ED000FEF61 /* LawChinaViewController.m in Sources */,
 				4DEDD8871BD8778C008BAF8B /* main.m in Sources */,
 				FF7C450B20AD9293007BB854 /* SMPagerTabView.m in Sources */,
+				FF3F8C3A21075E89004F41A3 /* LawChapterModel.m in Sources */,
 				4D16147E1D2534BF00606309 /* TextKitViewController.m in Sources */,
 				4D5C79171EF903E70058B51D /* MSParser.m in Sources */,
 				4DB5E7A31D26090E0057A563 /* CoreAnimationViewController.m in Sources */,
 				4DA49BB01D41526600C8B322 /* GVUserDefaults.m in Sources */,
+				FF3F8C44210873CB004F41A3 /* LawEffectLevelRequestTool.m in Sources */,
+				FF3F8C402108240B004F41A3 /* LawDataRequestTool.m in Sources */,
 				4D21E9561D4A203E00FCD270 /* UIViewController+ESSeparatorInset.m in Sources */,
 				FFF0737A20A2D634009A3CAE /* SSRequest.m in Sources */,
 				4D7226C01F0D1D3F00B216A5 /* FenbiDataStorage.m in Sources */,
